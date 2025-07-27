@@ -1,5 +1,0 @@
-#include "gvs\colors_include.hpp"
-#include "gvs\control_include.hpp"
-#include "gvs\stc_include.hpp"
-
-respawn = "BASE"
