@@ -1,0 +1,31 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "galili base";
+_camera camPrepareTarget [-7852.27,-72623.63,-49831.55];
+_camera camPreparePos [8440.47,12475.29,206.42];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Finally, we're coming up on Galili base.","PLAIN DOWN"];
+
+~10
+
+
+
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

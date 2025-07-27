@@ -1,0 +1,22 @@
+
+
+{titlecut [" ","BLACK IN",1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal", "back"]
+
+startcount=true
+ #loop
+	;comment "15:31:51";
+_camera camSetTarget Droney;
+_camera camSetrelPos [0,0,10];
+_camera camsettarget Droney;
+_camera camPrepareFOV 1.000;
+_camera camCommitPrepared 1
+? isGetoutWanted : goto "nextstep"
+ goto "loop"
+
+#nextstep
+_camera cameraeffect ["terminate","back"]
+camdestroy _camera
+exit;
+isGetoutWanted = false;

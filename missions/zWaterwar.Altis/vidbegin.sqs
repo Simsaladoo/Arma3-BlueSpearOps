@@ -1,0 +1,96 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 2]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "23:17:51";
+_camera camPrepareTarget [-65942.37,65734.49,-27875.96];
+_camera camPreparePos [14330.03,13026.46,19.54];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "23:18:26";
+_camera camPrepareTarget [-47446.59,-65333.52,-4793.77];
+_camera camPreparePos [14329.19,13162.36,1.38];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+
+;comment "23:18:48";
+_camera camPrepareTarget [-59553.71,74875.75,-26718.54];
+_camera camPreparePos [14272.74,12951.34,23.98];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "out tower";
+_camera camPrepareTarget [-61923.70,75718.77,-19051.44];
+_camera camPreparePos [13941.04,13414.01,27.35];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "23:32:26";
+_camera camPrepareTarget [34217.88,-83909.71,-865.45];
+_camera camPreparePos [13420.65,13900.89,-19.02];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "23:42:18";
+_camera camPrepareTarget [-84633.27,33414.27,1287.07];
+_camera camPreparePos [13433.04,13880.10,-19.84];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "23:50:05";
+_camera camPrepareTarget [-46930.02,91009.78,-13104.47];
+_camera camPreparePos [14145.63,12929.28,45.44];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "23:48:31";
+_camera camPrepareTarget [49062.29,-74814.51,-27264.21];
+_camera camPreparePos [12907.21,14342.50,3.28];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+
+
+
+;comment "23:21:29";
+_camera camPrepareTarget [102325.70,-9540.62,-37744.57];
+_camera camPreparePos [12885.47,14350.75,28.81];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+;comment "23:22:11";
+_camera camPrepareTarget [-7836.94,-81223.19,-19129.57];
+_camera camPreparePos [13349.98,14611.07,21.52];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",1]
+exit
+
+
+
+
+

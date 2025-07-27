@@ -1,0 +1,36 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "above kavala";
+_camera camPrepareTarget [-61767.79,-56630.84,-27415.64];
+_camera camPreparePos [3929.97,13688.49,105.35];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~18
+
+
+
+//Ending fade transition
+
+titlecut ["","BLACK OUT",2]
+~2
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

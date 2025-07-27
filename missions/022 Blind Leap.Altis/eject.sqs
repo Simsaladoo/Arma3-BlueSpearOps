@@ -1,0 +1,23 @@
+b1 action ["eject",poopoohead]
+~1
+b2 action ["eject",poopoohead]
+~1
+b3 action ["eject",poopoohead]
+~1
+b4 action ["eject",poopoohead]
+~1
+b5 action ["eject",poopoohead]
+~1
+b6 action ["eject",poopoohead]
+~1
+b7 action ["eject",poopoohead]
+~1
+b8 action ["eject",poopoohead]
+~1
+b2 doFollow b1
+b3 doFollow b1
+b4 doFollow b1
+b5 doFollow b1
+b6 doFollow b1
+b7 doFollow b1
+b8 doFollow b1

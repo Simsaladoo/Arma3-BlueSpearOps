@@ -1,0 +1,94 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+
+;comment "green officer briefing";
+_camera camPrepareTarget [101318.23,40162.50,-5071.53];
+_camera camPreparePos [6982.77,7374.40,1.41];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Good Evening, Gents","PLAIN DOWN"];
+
+~5
+
+
+;comment "map view";
+_camera camPrepareTarget [8674.15,-92415.10,-5416.58];
+_camera camPreparePos [6896.41,7420.96,14.46];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["The target for today is this convoy","PLAIN DOWN"];
+~5
+
+
+
+
+;comment "real view match cut";
+_camera camPrepareTarget [7175.46,12589.23,-99749.71];
+_camera camPreparePos [7228.29,11600.17,157.58];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["It was attacked on the road to Nicolet...","PLAIN DOWN"];
+~5
+
+;comment "alt view";
+_camera camPrepareTarget [-34319.14,87372.74,-50064.72];
+_camera camPreparePos [7255.15,11559.30,31.19];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["...about an hour ago","PLAIN DOWN"];
+~4
+
+;comment "alt view reverse";
+_camera camPrepareTarget [104096.63,28564.39,-17572.61];
+_camera camPreparePos [7159.10,11596.78,29.61];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["A small group escaped during the fighting and survived after running to high ground","PLAIN DOWN"];
+~6
+
+;comment "village shit";
+_camera camPrepareTarget [-85602.45,-3850.34,-33426.17];
+_camera camPreparePos [7305.79,11562.72,44.88];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Their last communication stated some were taken captive to a village nearby","PLAIN DOWN"];
+
+~4
+;comment "village near";
+_camera camPrepareTarget [-49227.04,44817.36,-75708.50];
+_camera camPreparePos [6565.67,11119.44,98.61];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["You must help our men... we will transport you there now","PLAIN DOWN"];
+
+~5
+
+
+;comment "TRUCK";
+_camera camPrepareTarget [-18694.51,-86216.23,-24043.12];
+_camera camPreparePos [6886.25,7417.06,4.46];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Please board the truck to begin your journey.  Godspeed.","PLAIN DOWN"];
+
+~5
+
+
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

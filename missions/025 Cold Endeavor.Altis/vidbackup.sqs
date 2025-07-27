@@ -1,0 +1,38 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "wheels";
+_camera camPrepareTarget [-26654.86,100305.06,-5562.15];
+_camera camPreparePos [10257.95,7541.27,0.20];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~2
+
+;comment "0:44:01";
+_camera camPrepareTarget [13990.90,102760.26,-30063.89];
+_camera camPreparePos [10251.57,7506.62,24.95];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~6
+
+
+
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

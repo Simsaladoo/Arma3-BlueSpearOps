@@ -1,0 +1,56 @@
+onLoadIntro = "Blue Spear Operatives go undercover into Dionysios to assassinate a militant warcriminal and recover stolen research documents."
+onLoadMissionTime = 1;
+onLoadIntroTime = 1;
+author="Simsaladoo";
+OnLoadName = "Wolf Amongst Sheep";
+OnLoadMission = "Blue Spear Operatives go undercover into Dionysios to assassinate a militant warcriminal and recover stolen research documents.";
+loadScreen = "images\MyLogo.jpg";
+aiKills = 1;
+briefing = 1;
+debriefing = 1;
+showMap = 1;
+showCompass = 1;
+showGPS = 1;
+showWatch = 1;
+maxScore = 200;
+avgScore = 50;
+minScore = 0;
+respawn = "NONE";
+enableDebugConsole = 2;
+
+#include "VAS\menu.hpp"
+
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+
+
+class CfgSounds
+{
+// List of sounds (.ogg files without the .ogg extension)
+sounds[] = {heartbeat};
+
+// Definition for each sound
+class heartbeat
+{
+name = "heartbeat"; // Name for mission editor
+sound[] = {\sounds\hb.ogg, db + 0, 1.0};
+titles[] = {0, ""};
+};
+}; 
+
+class CfgMusic
+{
+	tracks[] = {BlueSpearTheme};
+
+	class Lopster
+	{
+		name = "Blue Spear Theme"; // Name for mission editor
+		sound[] = {\music\BlueSpearTheme.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
+	};
+};
+
+

@@ -1,0 +1,49 @@
+onLoadIntro = "Blue Spear operatives are dropped in on southern Altis to raid an Opfor-owned airport."
+onLoadMissionTime = 1;
+onLoadIntroTime = 1;
+author="Simsaladoo";
+OnLoadName = "Steel Vengeance";
+OnLoadMission = "Blue Spear operatives are dropped in on southern Altis to raid an Opfor-owned airport.";
+loadScreen = "images\MyLogo.jpg";
+aiKills = 1;
+briefing = 1;
+debriefing = 1;
+showMap = 1;
+showCompass = 1;
+showGPS = 1;
+showWatch = 1;
+maxScore = 200;
+avgScore = 50;
+minScore = 0;
+enableDebugConsole = 2;
+allowFunctionsLog    = 1;
+
+#include "VAS\menu.hpp"
+
+class Header
+{
+	gameType = COOP; //game type
+	minPlayers = 1; //min # of players the mission supports
+	maxPlayers = 8; //max # of players the mission supports
+	playerCountMultipleOf = 1; //OFP:Elite option.
+};
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+
+
+class CfgMusic
+{
+	// List of tracks (.ogg files without the .ogg extension)
+	tracks[] = {BlueSpearTheme};
+
+	// Definition for each sound
+	class Lopster
+	{
+		name = "Blue Spear Theme"; // Name for mission editor
+		sound[] = {\music\BlueSpearTheme.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
+	};
+};

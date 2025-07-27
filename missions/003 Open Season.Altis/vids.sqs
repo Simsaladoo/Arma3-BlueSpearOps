@@ -1,0 +1,105 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "officer";
+_camera camPrepareTarget [86745.20,-54000.84,-186.68];
+_camera camPreparePos [11587.02,11962.78,1.28];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "helo";
+_camera camPrepareTarget [-86073.39,39089.31,-5949.77];
+_camera camPreparePos [10120.51,12434.91,65.54];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "area";
+_camera camPrepareTarget [-30059.18,105218.50,-23977.91];
+_camera camPreparePos [5502.06,14900.45,35.25];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "bomb";
+_camera camPrepareTarget [-93731.51,12039.04,-12134.20];
+_camera camPreparePos [5481.35,15011.47,1.61];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "dead 1";
+_camera camPrepareTarget [40074.20,-78525.08,-6888.58];
+_camera camPreparePos [5443.01,15031.68,0.61];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~2
+
+;comment "dead 2";
+_camera camPrepareTarget [102706.20,5230.31,-21066.85];
+_camera camPreparePos [5444.93,14978.17,1.64];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~2
+
+;comment "dead 3";
+_camera camPrepareTarget [-74774.20,-40541.31,-21820.22];
+_camera camPreparePos [5430.76,15041.88,2.48];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~2
+
+;comment "tower behind";
+_camera camPrepareTarget [2437.80,-83712.48,-15445.89];
+_camera camPreparePos [5431.00,15036.23,3.38];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "tower guns";
+_camera camPrepareTarget [101896.13,22759.20,-25172.35];
+_camera camPreparePos [5436.42,15030.81,15.62];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "22:29:10";
+_camera camPrepareTarget [-85153.20,-26476.17,-6779.67];
+_camera camPreparePos [5565.02,15044.05,3.24];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "tower inside";
+_camera camPrepareTarget [15282.70,112114.41,-21817.08];
+_camera camPreparePos [5438.76,15030.05,13.28];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+
+
+//Ending fade transition
+
+titlecut ["","BLACK OUT",2]
+~2
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

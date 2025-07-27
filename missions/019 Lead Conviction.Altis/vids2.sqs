@@ -1,0 +1,30 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//hostages scene
+;comment "15:43:13";
+_camera camPrepareTarget [-55996.63,-44472.52,-29283.59];
+_camera camPreparePos [18393.50,15573.23,3.60];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+
+~5
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",1]
+exit
+
+
+
+
+

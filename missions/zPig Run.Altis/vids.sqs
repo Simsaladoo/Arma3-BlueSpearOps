@@ -1,0 +1,81 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment  "officer";
+_camera camPrepareTarget [54425.64,-78083.80,7548.80];
+_camera camPreparePos [11589.52,11963.17,1.21];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+
+;comment "jets;
+_camera camPrepareTarget [-9157.00,107548.61,-19878.25];
+_camera camPreparePos [11705.29,11796.60,7.43];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~4
+
+
+;comment "good tanks";
+_camera camPrepareTarget [-33085.52,105739.35,-16052.46];
+_camera camPreparePos [7965.17,15981.54,9.40];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~5
+
+;comment "good tanks far";
+_camera camPrepareTarget [62854.02,-60665.98,-27491.45];
+_camera camPreparePos [7398.29,17786.40,85.33];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+
+;comment "enemies 1";
+_camera camPrepareTarget [-62849.82,-43453.55,-27085.83];
+_camera camPreparePos [11961.13,17088.06,40.52];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~5
+
+;comment "enemies 2";
+_camera camPrepareTarget [-68941.78,-37614.72,-20693.68];
+_camera camPreparePos [10759.81,19080.29,37.80];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+
+
+//Ending fade transition
+
+titlecut ["","BLACK OUT",2]
+~2
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

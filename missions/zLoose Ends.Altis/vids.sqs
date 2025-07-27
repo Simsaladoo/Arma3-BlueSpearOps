@@ -1,0 +1,101 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 2]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;comment "officer";
+_camera camPrepareTarget [99114.27,-36090.66,5506.21];
+_camera camPreparePos [11587.96,11962.35,0.91];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "helis";
+_camera camPrepareTarget [109436.41,-8755.64,-623.61];
+_camera camPreparePos [11604.22,11937.34,1.42];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "base";
+_camera camPrepareTarget [3664.61,-85363.88,-20935.53];
+_camera camPreparePos [11619.54,12083.20,31.66];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "jets";
+_camera camPrepareTarget [86712.80,77022.14,3322.18];
+_camera camPreparePos [11324.96,11408.85,0.20];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "artillery";
+_camera camPrepareTarget [-3533.05,-80468.59,-26778.54];
+_camera camPreparePos [16771.58,13705.48,29.84];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "soft targets";
+_camera camPrepareTarget [-23399.29,100167.28,-27078.94];
+_camera camPreparePos [16656.25,12628.15,35.65];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "enemy base";
+_camera camPrepareTarget [2810.79,112988.94,-23748.88];
+_camera camPreparePos [14752.12,16536.31,29.67];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "enemy chop";
+_camera camPrepareTarget [112899.14,19906.35,18857.52];
+_camera camPreparePos [14741.46,16672.64,0.20];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "outpost";
+_camera camPrepareTarget [110711.94,27522.94,-30834.66];
+_camera camPreparePos [16713.86,12974.05,15.11];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "aa car";
+_camera camPrepareTarget [-11056.83,-82056.52,-13658.77];
+_camera camPreparePos [16793.07,13007.71,2.50];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+
+
+
+
+;comment "you";
+_camera camPrepareTarget [106825.11,-17942.26,-5604.96];
+_camera camPreparePos [11569.72,11970.09,1.77];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

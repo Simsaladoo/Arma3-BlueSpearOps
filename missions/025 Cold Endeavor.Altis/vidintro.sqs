@@ -1,0 +1,162 @@
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "officer";
+_camera camPrepareTarget [28345.25,111361.16,-11582.95];
+_camera camPreparePos [14277.00,13036.65,1.43];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["11 April 18:06","PLAIN DOWN"];
+
+~4
+
+;comment "18:56:05";
+_camera camPrepareTarget [-80869.43,-5007.89,-33600.12];
+_camera camPreparePos [11730.18,12004.03,44.87];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+
+~4
+
+
+
+
+;comment "other leaaders base";
+_camera camPrepareTarget [50513.88,93517.41,-31151.54];
+_camera camPreparePos [10225.33,7510.05,25.88];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Blue Spear operatives clear a hilltop to snipe Opfor agents on a weapons deal.","PLAIN DOWN"];
+~4
+
+
+
+
+
+
+
+;comment "leader 2";
+_camera camPrepareTarget [63439.23,-77066.16,-2026.13];
+_camera camPreparePos [10245.64,7564.13,1.70];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~4
+
+
+
+
+
+;comment "city";
+_camera camPrepareTarget [100250.30,46630.44,-21379.25];
+_camera camPreparePos [10272.06,8658.38,41.81];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["The target area is heavily defended, and getting close would only scare away the Officers. ","PLAIN DOWN"];
+
+
+~4
+
+
+
+
+;comment "closeup 1";
+_camera camPrepareTarget [-10109.41,-88633.47,-9495.93];
+_camera camPreparePos [10413.47,8768.31,3.56];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+;comment "closeup 2";
+_camera camPrepareTarget [-85144.54,21885.57,-26107.66];
+_camera camPreparePos [10466.09,8729.56,10.07];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+
+;comment "leader 1";
+_camera camPrepareTarget [97775.56,-39853.98,1433.79];
+_camera camPreparePos [10391.11,8747.43,1.79];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Both Officers must be eliminated at all costs.","PLAIN DOWN"];
+
+~4
+
+
+
+
+
+;comment "19:40:32";
+_camera camPrepareTarget [-83668.15,1837.13,-30852.62];
+_camera camPreparePos [11141.66,8723.43,9.69];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+;comment "19:41:05";
+_camera camPrepareTarget [108580.55,5229.73,-21995.95];
+_camera camPreparePos [11132.52,8722.39,12.87];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["But there is a perfect area to accomplish this nearby.","PLAIN DOWN"];
+~4
+
+;comment "19:41:21";
+_camera camPrepareTarget [105520.49,5339.41,-32569.88];
+_camera camPreparePos [11102.81,8723.46,33.78];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["On their own Outpost Peak, East of the targets.","PLAIN DOWN"];
+~4
+
+;comment "19:41:58";
+_camera camPrepareTarget [61958.97,80934.91,-46513.99];
+_camera camPreparePos [11115.16,8628.04,85.72];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["You must clear the entire hill before they can radio their friends.","PLAIN DOWN"];
+
+~4
+
+
+;comment "dropoff";
+_camera camPrepareTarget [-3693.45,-88714.49,-11185.46];
+_camera camPreparePos [11549.49,9478.89,7.42];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["The convoy will drop you off at an Independent site Northeast of the Peak.","PLAIN DOWN"];
+
+~5
+
+
+;comment "4:03:25";
+_camera camPrepareTarget [-70395.56,-41214.93,-20979.37];
+_camera camPreparePos [11645.02,11981.08,3.72];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Load up when you're ready.  Good Hunting.","PLAIN DOWN"];
+
+
+~4
+
+
+titlecut ["","BLACK IN",1]
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

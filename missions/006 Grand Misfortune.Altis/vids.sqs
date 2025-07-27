@@ -1,0 +1,74 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;comment "officer";
+_camera camPrepareTarget [26958.05,112229.19,6.72];
+_camera camPreparePos [14277.04,13036.54,0.90];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+;comment "heli";
+_camera camPrepareTarget [-71460.09,-37656.46,-8472.23];
+_camera camPreparePos [14309.55,13059.32,2.25];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "FBO";
+_camera camPrepareTarget [-74459.30,-27443.65,-21490.41];
+_camera camPreparePos [14395.18,13119.79,46.34];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "hill";
+_camera camPrepareTarget [-70661.36,-23409.62,-47924.18];
+_camera camPreparePos [8143.63,14726.19,229.91];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "frtongun";
+_camera camPrepareTarget [-89664.63,31157.04,-14097.76];
+_camera camPreparePos [7903.99,14619.55,1.87];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "rocksoldiers";
+_camera camPrepareTarget [-85774.39,-6935.96,-27321.78];
+_camera camPreparePos [7888.05,14637.29,5.67];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "churchsoldiers";
+_camera camPrepareTarget [105995.34,-1310.15,-10479.77];
+_camera camPreparePos [7862.69,14636.41,1.98];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+
+;comment "backsoldiers";
+_camera camPrepareTarget [99931.16,53641.51,1454.33];
+_camera camPreparePos [7866.27,14620.20,1.55];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

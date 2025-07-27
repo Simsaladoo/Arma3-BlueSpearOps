@@ -1,0 +1,98 @@
+//Dealers head out
+
+
+titlecut [" ","BLACK IN", 2]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+
+;comment "1offficer";
+_camera camPrepareTarget [83940.83,-56735.22,6754.79];
+_camera camPreparePos [11585.75,11963.02,1.10];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+;comment "chops";
+_camera camPrepareTarget [-22639.38,104529.40,-14387.71];
+_camera camPreparePos [11649.29,11703.84,46.36];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "tower";
+_camera camPrepareTarget [-71630.82,290.59,-62511.69];
+_camera camPreparePos [4663.17,15454.85,118.72];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "inner magos";
+_camera camPrepareTarget [34671.92,-79861.34,-2413.70];
+_camera camPreparePos [4537.58,15452.54,3.63];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "target2";
+_camera camPrepareTarget [99626.34,-13367.41,-26949.32];
+_camera camPreparePos [9138.01,19309.57,31.17];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "innertarget2";
+_camera camPrepareTarget [92134.73,-35652.20,-9825.00];
+_camera camPreparePos [9204.42,19307.56,1.44];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "insidetarget2house";
+_camera camPrepareTarget [-36818.02,-69503.09,-830.54];
+_camera camPreparePos [9203.61,19271.07,1.69];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~4
+
+
+
+
+
+;comment "convoy leaving";
+_camera camPrepareTarget [-87711.28,16906.80,-26551.42];
+_camera camPreparePos [8667.76,15824.75,14.38];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "23:31:07";
+_camera camPrepareTarget [-44407.08,96627.98,-3532.50];
+_camera camPreparePos [10557.65,13166.84,51.65];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~5
+
+
+
+
+
+
+
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",1]
+exit
+
+
+
+
+

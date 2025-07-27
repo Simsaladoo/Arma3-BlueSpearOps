@@ -1,0 +1,34 @@
+; *********************************************************************************
+; **        Script: Paratrooper.sqs
+; **   Descripcion: Obliga a un grupo a saltar si su lider lo hace.
+; *********************************************************************************
+; **         Autor: RAVEN
+; **          Site: www.ArmedAssault.com.ar/Foros
+; *********************************************************************************
+; **    Invocación: [Nombre_grupo, Nombre_vehiculo] exec "Paratrooper.sqs"
+; *********************************************************************************
+; **   Comentarios: Si somos el lider del grupo, solo necesitamos saltar para que
+; **                el resto nos siga, pero si el grupo es IA o formamos parte
+; **                pero no somos el lider, solo debemos ordenar al lider que salte
+; **                de ésta forma:
+; **                Nombre_Lider ACTION ["EJECT", vehicle Nombre_Lider]
+; *********************************************************************************
+
+_grupo = _this select 0
+_vehiculo = _this select 1
+
+#espero
+@not (leader(_grupo) in _vehiculo)
+_max = count units _grupo
+_ord = 0
+
+#salto
+~0.5
+_quien = ((units _grupo) select _ord)
+_quien action ["EJECT", _vehiculo]
+unassignvehicle _quien
+_ord = _ord + 1
+? _ord <= _max: goto "salto"
+
+#salida
+exit

@@ -1,0 +1,76 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;comment "officer";
+_camera camPrepareTarget [111424.20,9968.77,-5343.92];
+_camera camPreparePos [11587.91,11960.44,1.21];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+;comment "tanks";
+_camera camPrepareTarget [-87035.70,4450.44,-14151.47];
+_camera camPreparePos [11667.25,11967.38,3.02];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+;comment "21:11:40";
+_camera camPrepareTarget [96487.15,44736.34,-41210.90];
+_camera camPreparePos [11535.26,11896.58,38.27];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "20:52:59";
+_camera camPrepareTarget [106523.00,39872.25,-14984.85];
+_camera camPreparePos [11725.09,11801.18,2.16];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+
+
+
+;comment "enemy arty";
+_camera camPrepareTarget [84061.24,-51471.26,-20472.24];
+_camera camPreparePos [9156.23,11500.68,16.80];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+;comment "20:23:02";
+_camera camPrepareTarget [-82211.09,39609.36,-6865.02];
+_camera camPreparePos [13492.83,11469.42,14.67];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~5
+
+;comment "enemy tanks";
+_camera camPrepareTarget [95085.84,-40104.53,-4290.07];
+_camera camPreparePos [9665.05,11707.97,2.77];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

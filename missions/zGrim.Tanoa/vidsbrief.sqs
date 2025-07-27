@@ -1,0 +1,65 @@
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;comment "3:18:17";
+_camera camPrepareTarget [106532.39,15202.30,-3674.38];
+_camera camPreparePos [6905.95,7390.08,1.62];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "3:16:20";
+_camera camPrepareTarget [-69564.91,71824.14,6.35];
+_camera camPreparePos [6907.82,7388.72,1.53];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+
+
+;comment "3:17:21";
+_camera camPrepareTarget [-81937.65,29896.37,-39918.05];
+_camera camPreparePos [6854.95,7213.50,106.41];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+
+;comment "you";
+_camera camPrepareTarget [-92131.60,12290.34,-14041.75];
+_camera camPreparePos [6750.00,7283.02,2.44];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+
+;comment "3:21:33";
+_camera camPrepareTarget [-39588.02,8470.65,-87676.17];
+_camera camPreparePos [7391.85,7346.59,750.48];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+
+
+;comment "3:18:34";
+_camera camPrepareTarget [71216.71,83871.13,-3674.61];
+_camera camPreparePos [6899.53,7387.36,1.62];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+readyclass = true;
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

@@ -1,0 +1,78 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "23:45:07";
+_camera camPrepareTarget [23186.72,116403.14,19.90];
+_camera camPreparePos [14621.39,16770.62,1.47];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+
+;comment "23:45:23";
+_camera camPrepareTarget [112684.82,6762.13,-16425.87];
+_camera camPreparePos [14537.72,16737.53,27.09];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+
+;comment "23:46:23";
+_camera camPrepareTarget [105929.95,-13172.51,-20074.02];
+_camera camPreparePos [12720.56,16750.89,64.22];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+
+
+
+;comment "tower1";
+_camera camPrepareTarget [73673.52,72190.45,-58679.70];
+_camera camPreparePos [15231.59,16201.33,72.43];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "tower2";
+_camera camPrepareTarget [-48788.88,63072.39,-60491.01];
+_camera camPreparePos [15540.70,16252.55,70.67];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "tower3";
+_camera camPrepareTarget [-48980.01,66029.70,-57382.02];
+_camera camPreparePos [15765.11,15963.44,74.96];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "20:00:22";
+_camera camPrepareTarget [-67835.01,68425.57,-16333.71];
+_camera camPreparePos [15726.95,15995.10,51.24];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",1]
+exit
+
+
+
+
+

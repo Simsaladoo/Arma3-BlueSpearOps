@@ -1,0 +1,72 @@
+onLoadIntro = "Blue Spear Operatives defend Thronos Castle against an onslaught of Opfor forces."
+onLoadMissionTime = 1;
+onLoadIntroTime = 1;
+author="Simsaladoo";
+OnLoadName = "Couched Lance";
+OnLoadMission = "Blue Spear Operatives defend Thronos Castle against an onslaught of Opfor forces.";
+loadScreen = "images\MyLogo.jpg";
+aiKills = 0;
+briefing = 1;
+debriefing = 1;
+showMap = 1;
+showCompass = 1;
+showGPS = 1;
+showWatch = 1;
+maxScore = 200;
+avgScore = 50;
+minScore = 0;
+respawn = "BASE";
+respawndelay = 12;
+enableDebugConsole = 2;
+allowFunctionsLog    = 1;
+
+#include "VAS\menu.hpp"
+#include "AlarmUI\dialogL.hpp"
+#include "AlarmUI\dialogM.hpp"
+#include "AlarmUI\dialogS.hpp"
+#include "AlarmUI\dialogU.hpp"
+#include "AlarmUI\LappyA.hpp"
+#include "AlarmUI\LappyB.hpp"
+#include "AlarmUI\defines.hpp"
+
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+
+class Header
+{
+	gameType = COOP; //game type
+	minPlayers = 1; //min # of players the mission supports
+	maxPlayers = 8; //max # of players the mission supports
+	playerCountMultipleOf = 1; //OFP:Elite option.
+};
+
+class CfgSounds
+{
+// List of sounds (.ogg files without the .ogg extension)
+sounds[] = {heartbeat};
+
+// Definition for each sound
+class heartbeat
+{
+name = "heartbeat"; // Name for mission editor
+sound[] = {\sounds\hb.ogg, db + 0, 1.0};
+titles[] = {0, ""};
+};
+}; 
+
+class CfgMusic
+{
+	tracks[] = {BlueSpearTheme};
+
+	class Lopster
+	{
+		name = "Blue Spear Theme"; // Name for mission editor
+		sound[] = {\music\BlueSpearTheme.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
+	};
+};
+
+

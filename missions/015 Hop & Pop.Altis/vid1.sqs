@@ -1,0 +1,111 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "officer";
+_camera camPrepareTarget [42040.22,108835.02,-7198.46];
+_camera camPreparePos [14277.49,13036.48,1.28];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "Nato at dock";
+_camera camPrepareTarget [-48739.73,102669.77,-11012.78];
+_camera camPreparePos [9735.62,22290.99,6.57];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "comm1 over top of tower";
+_camera camPrepareTarget [-14397.57,118061.23,-22308.34];
+_camera camPreparePos [8875.30,23391.54,36.14];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "sea fort bravo overtop";
+_camera camPrepareTarget [-57477.72,-42719.46,-34242.90];
+_camera camPreparePos [8730.83,23940.13,28.91];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "sea fort bravo side of tower";
+_camera camPrepareTarget [-405.91,122945.62,-10318.05];
+_camera camPreparePos [8698.55,23898.58,16.04];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+
+;comment "fans";
+_camera camPrepareTarget [-35770.26,-64451.58,-6424.90];
+_camera camPreparePos [8851.68,24809.66,11.61];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+
+;comment "aa guys";
+_camera camPrepareTarget [-65847.62,90422.80,-13766.58];
+_camera camPreparePos [8511.67,25015.35,1.81];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+
+;comment "tower";
+_camera camPrepareTarget [10681.24,122359.19,-22652.61];
+_camera camPreparePos [8419.17,25015.53,25.80];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+
+;comment "enemyofficer";
+_camera camPrepareTarget [60059.93,110095.77,-10456.75];
+_camera camPreparePos [8453.92,25094.33,1.40];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "town1";
+_camera camPrepareTarget [96366.36,69014.91,-18548.61];
+_camera camPreparePos [8477.54,25114.59,6.26];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+;comment "town2overlook";
+_camera camPrepareTarget [-91294.30,31167.84,-2751.93];
+_camera camPreparePos [8480.75,25105.39,5.59];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "enemy base";
+_camera camPrepareTarget [-23985.44,107287.75,-46264.43];
+_camera camPreparePos [8530.10,24920.87,91.97];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",1]
+exit
+
+
+
+
+

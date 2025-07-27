@@ -1,0 +1,93 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "officer";
+_camera camPrepareTarget [54858.64,104407.13,-2112.13];
+_camera camPreparePos [14276.21,13036.56,1.11];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~5
+
+;comment "rolllin out";
+_camera camPrepareTarget [80354.24,105033.81,9027.03];
+_camera camPreparePos [26010.37,21571.65,0.48];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "FWDB";
+_camera camPrepareTarget [79918.58,100074.30,-30106.02];
+_camera camPreparePos [25906.64,21499.35,15.81];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "city1";
+_camera camPrepareTarget [80263.12,101733.14,-30206.56];
+_camera camPreparePos [26693.79,22870.23,54.18];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "outpost";
+_camera camPrepareTarget [-4143.54,-68540.20,-26718.18];
+_camera camPreparePos [26634.42,22761.54,21.05];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "airport";
+_camera camPrepareTarget [-55464.22,-32059.01,-164.62];
+_camera camPreparePos [26874.15,24689.18,1.43];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "street1";
+_camera camPrepareTarget [70241.23,113341.69,-4299.23];
+_camera camPreparePos [27054.93,23251.43,2.06];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "street2";
+_camera camPrepareTarget [111819.34,-29478.66,-4723.24];
+_camera camPreparePos [27036.80,23336.05,2.35];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "19:20:29";
+_camera camPrepareTarget [-23957.17,108277.34,-13145.25];
+_camera camPreparePos [27077.16,23295.31,5.44];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~6
+
+
+
+//Ending fade transition
+
+titlecut ["","BLACK OUT",2]
+~2
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

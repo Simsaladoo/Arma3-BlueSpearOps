@@ -1,0 +1,48 @@
+onLoadIntro = "NATO Spies are sent on a mission to intercept and neutralize a supply of chemical weapons."
+onLoadMissionTime = 1;
+onLoadIntroTime = 1;
+author="Simsaladoo";
+OnLoadName = "Spies!";
+OnLoadMission = "NATO Spies are sent on a mission to intercept and neutralize a supply of chemical weapons.";
+loadScreen = "images\MyLogo.jpg";
+aiKills = 1;
+briefing = 0;
+debriefing = 0;
+showMap = 1;
+showCompass = 1;
+showGPS = 1;
+showWatch = 1;
+maxScore = 200;
+avgScore = 50;
+minScore = 0;
+respawn = "BASE";
+respawnDelay = "20";
+respawnVehicleDelay = 180;
+
+/* VAS includes */
+#include "VAS\menu.hpp"
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+class Header
+{
+	gameType = COOP; //game type
+	minPlayers = 1; //min # of players the mission supports
+	maxPlayers = 32; //max # of players the mission supports
+	playerCountMultipleOf = 1; //OFP:Elite option.
+};
+
+class CfgMusic
+{
+	// List of tracks (.ogg files without the .ogg extension)
+	tracks[] = {Run Through the Jungle};
+
+	// Definition for each sound
+	class RunThroughtheJungle
+	{
+		name = "Run Through the Jungle"; // Name for mission editor
+		sound[] = {\music\Run Through the Jungle.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
+	};
+};

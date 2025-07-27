@@ -1,0 +1,64 @@
+//Loading Screen
+///////////////////////////////////////////////////////////////////////////////////////////
+onLoadIntro="Welcome to Sim's Killhouse in the Desert.  This is the King of the Hill version of the compound.";
+onLoadIntroTime=true;
+onLoadMission="Welcome to Sim's Killhouse in the Desert.  This is the King of the Hill version of the compound.";
+onLoadMissionTime=true;
+aiKills = 0;
+author="Simsaladoo";
+OnLoadName = "King of the Killhouse";
+loadScreen = "images\MyLogo.jpg";
+///////////////////////////////////////////////////////////////////////////////////////////
+
+//Mission and map
+///////////////////////////////////////////////////////////////////////////////////////////
+disabledAI = 1;
+showCompass   = 1; 
+showGPS       = 1; 
+showMap       = 1; 
+showWatch     = 1; 
+enableItemsDropping = 1;
+///////////////////////////////////////////////////////////////////////////////////////////
+
+// Mission Header
+///////////////////////////////////////////////////////////////////////////////////////////
+class Header
+{
+  gameType = Scont ;
+  minPlayers = 1;
+  maxPlayers = 16;
+};
+///////////////////////////////////////////////////////////////////////////////////////////
+
+// description.ext settings for respawn
+///////////////////////////////////////////////////////////////////////////////////////////
+respawn = "BASE";
+respawndelay = 15;
+respawnDialog = true;
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+#include "VAS\menu.hpp"
+#include "gvs\colors_include.hpp"
+#include "gvs\control_include.hpp"
+#include "gvs\stc_include.hpp"
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+
+
+class CfgMusic
+{
+	tracks[] = {BlueSpearTheme};
+
+	class Lopster
+	{
+		name = "Blue Spear Theme"; // Name for mission editor
+		sound[] = {\music\BlueSpearTheme.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
+	};
+};
+
+

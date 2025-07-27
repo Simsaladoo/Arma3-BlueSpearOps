@@ -1,0 +1,30 @@
+//Dealers head out
+
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "22:16:01";
+_camera camPrepareTarget [18119.72,91403.74,58923.06];
+_camera camPreparePos [19807.02,8725.50,2631.51];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+
+titlecut ["","BLACK OUT",2]
+~2
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

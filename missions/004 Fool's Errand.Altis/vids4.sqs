@@ -1,0 +1,32 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "extraction chopper";
+_camera camPrepareTarget [110246.77,60367.98,-1010.37];
+_camera camPreparePos [17081.63,24047.97,45.65];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+
+~10
+
+
+
+titlecut ["","BLACK OUT",2]
+~2
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

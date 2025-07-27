@@ -1,0 +1,39 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "22:24:08";
+_camera camPrepareTarget [10940.19,103341.08,-31340.10];
+_camera camPreparePos [10380.31,8459.70,25.76];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+titleText ["Your team successfully completed all mission objectives, Good Work!","PLAIN DOWN"];
+~4
+;comment "22:24:28";
+_camera camPrepareTarget [-43606.81,-74858.65,-11214.24];
+_camera camPreparePos [10386.00,8529.28,1.96];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~6
+
+
+
+
+
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

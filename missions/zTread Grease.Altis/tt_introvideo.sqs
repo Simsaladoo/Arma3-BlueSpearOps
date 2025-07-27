@@ -1,0 +1,107 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "officer";
+_camera camPrepareTarget [44327.83,108414.85,13.89];
+_camera camPreparePos [14276.31,13036.87,1.42];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+;comment "spawn";
+_camera camPrepareTarget [-26225.11,-80910.53,-14052.49];
+_camera camPreparePos [3799.87,13430.85,14.66];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "enemy chop";
+_camera camPrepareTarget [37722.54,106297.71,140.46];
+_camera camPreparePos [3120.37,12475.70,1.16];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+
+;comment "armor";
+_camera camPrepareTarget [-48771.87,-69749.59,-14318.54];
+_camera camPreparePos [4169.59,13866.88,2.34];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "bridge a";
+_camera camPrepareTarget [-6339.06,112348.49,-9453.05];
+_camera camPreparePos [3549.95,13289.34,4.15];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "truck";
+_camera camPrepareTarget [-64473.49,-59158.98,-9414.11];
+_camera camPreparePos [3725.99,13366.55,3.28];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "above kastro left shift";
+_camera camPrepareTarget [60672.72,-64274.96,-25653.80];
+_camera camPreparePos [3000.05,13264.89,31.66];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "ender";
+_camera camPrepareTarget [38168.32,106831.70,-58.04];
+_camera camPreparePos [3025.42,13210.09,1.11];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~4
+
+;comment "ruins tower looking out at kavala";
+_camera camPrepareTarget [97210.81,3522.11,-32483.17];
+_camera camPreparePos [3147.51,13089.56,11.56];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "crane";
+_camera camPrepareTarget [-68138.88,-50729.70,-26671.77];
+_camera camPreparePos [3785.60,13404.90,27.23];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+
+//Ending fade transition
+
+titlecut ["","BLACK OUT",2]
+~2
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

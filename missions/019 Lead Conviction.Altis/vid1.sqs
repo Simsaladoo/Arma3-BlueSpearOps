@@ -1,0 +1,87 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "officer";
+_camera camPrepareTarget [52216.03,105344.44,-6311.27];
+_camera camPreparePos [14276.84,13037.15,1.20];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+;comment "foxtrot far";
+_camera camPrepareTarget [-20352.05,-71854.84,-31291.00];
+_camera camPreparePos [16884.05,15512.49,8.21];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "tadaaki";
+_camera camPrepareTarget [66681.15,101405.34,-11667.02];
+_camera camPreparePos [16867.65,15484.07,1.50];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "over charaki whatever";
+_camera camPrepareTarget [48383.68,100908.98,-40863.27];
+_camera camPreparePos [18055.89,14901.73,142.63];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "over hostage base";
+_camera camPrepareTarget [-53163.29,-43925.20,-36253.56];
+_camera camPreparePos [18453.17,15630.68,28.28];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "tower";
+_camera camPrepareTarget [78457.76,86051.10,-37434.16];
+_camera camPreparePos [18283.63,15534.07,20.78];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "outside hostages";
+_camera camPrepareTarget [-48404.41,88125.34,-16423.44];
+_camera camPreparePos [18393.16,15553.06,1.72];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "hostage cam";
+_camera camPrepareTarget [-54560.09,-43730.51,-34018.39];
+_camera camPreparePos [18393.28,15572.87,4.25];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "hostage killer cam";
+_camera camPrepareTarget [-69552.05,59958.54,-17195.56];
+_camera camPreparePos [18379.87,15567.29,1.73];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",1]
+exit
+
+
+
+
+

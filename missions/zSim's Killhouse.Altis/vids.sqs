@@ -1,0 +1,80 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+
+
+;comment "board";
+_camera camPrepareTarget [-11763.97,-74623.88,-5418.30];
+_camera camPreparePos [23220.26,18899.70,1.48];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "flag";
+_camera camPrepareTarget [-35332.96,-57884.46,26515.83];
+_camera camPreparePos [23216.43,18725.33,0.20];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "23:54:01";
+_camera camPrepareTarget [99716.39,64557.96,-44877.59];
+_camera camPreparePos [23086.20,18650.34,91.18];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "nato spawn";
+_camera camPrepareTarget [68774.99,87137.63,-57053.98];
+_camera camPreparePos [23193.06,18848.42,29.36];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "opfor spawn";
+_camera camPrepareTarget [110524.77,49971.20,-37702.32];
+_camera camPreparePos [23356.91,18700.71,29.36];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+
+;comment "23:56:08";
+_camera camPrepareTarget [-73220.86,43861.86,6147.49];
+_camera camPreparePos [23370.48,18713.69,0.20];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "23:56:29";
+_camera camPrepareTarget [17599.37,-80549.69,9268.04];
+_camera camPreparePos [23213.70,18861.81,0.20];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+//Ending fade transition
+
+titlecut ["","BLACK OUT",2]
+~2
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

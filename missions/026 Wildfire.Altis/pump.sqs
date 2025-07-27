@@ -1,0 +1,5 @@
+hint "Disabling pump...";
+~1
+hint "Pump is stopped";
+~1
+PumpIsArmed = true;

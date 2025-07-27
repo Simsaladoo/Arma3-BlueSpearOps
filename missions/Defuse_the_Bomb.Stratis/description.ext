@@ -1,0 +1,44 @@
+Author 			 = "cobra4v320";
+OnLoadName       = "Defuse the Bomb";
+OnLoadMission    = "Assault the hangar and defuse the bomb before it explodes.";
+
+
+respawn = 0;
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 4;
+};
+
+#include "DEFUSE\common.hpp"
+#include "DEFUSE\explosivePad.hpp"
+
+class CfgSounds 
+{
+	sounds[] = {}; 
+	#include "DEFUSE\sounds\cfgSounds.hpp"
+};
+
+class CfgFunctions 
+{
+	#include "functions\cfgFunctions.hpp"
+	#include "DEFUSE\functions\cfgFunctions.hpp"
+};
+
+class CfgDebriefing 
+{  
+	class End1 
+	{
+		title = "Mission Completed";
+		subtitle = "The bomb was disarmed";
+		description = "The bomb has been disarmed, head back to base. Good job!";
+	};
+	class Loser 
+	{
+        title = "Mission Failure";
+		subtitle = "The bomb was not disarmed in time";
+        description = "You you were unable to disarm the bomb in time! Try Again!";
+	};
+};

@@ -1,0 +1,113 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "officer";
+_camera camPrepareTarget [44547.40,108318.80,2241.76];
+_camera camPreparePos [14276.82,13036.56,1.08];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "leaving base";
+_camera camPrepareTarget [-71574.99,-17534.99,10126.44];
+_camera camPreparePos [21741.68,16963.00,1.51];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+
+;comment "over kalo";
+_camera camPrepareTarget [-65798.03,-25866.23,-24601.89];
+_camera camPreparePos [21453.37,16326.32,45.24];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "tower 1"";
+_camera camPrepareTarget [60649.82,99520.45,-37315.13];
+_camera camPreparePos [20804.69,15762.49,55.42];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "tower close";
+_camera camPrepareTarget [64681.12,103306.13,-20283.45];
+_camera camPreparePos [20811.21,15777.48,49.55];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+
+;comment "military tower";
+_camera camPrepareTarget [82387.36,-57988.96,-26896.94];
+_camera camPreparePos [20555.41,15886.80,30.36];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "tower against kalochri";
+_camera camPrepareTarget [105024.14,65212.38,-20623.70];
+_camera camPreparePos [20564.72,15808.34,22.50];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "HQ";
+_camera camPrepareTarget [90700.20,-53880.86,-13791.07];
+_camera camPreparePos [20558.98,16041.23,11.27];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+
+
+;comment "marsh";
+_camera camPrepareTarget [28801.87,110616.27,-25696.86];
+_camera camPreparePos [20841.34,14296.61,146.33];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+
+;comment "marsh with tank";
+_camera camPrepareTarget [57337.87,105339.10,-20564.89];
+_camera camPreparePos [20880.89,14520.79,6.87];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+;comment "hideout";
+_camera camPrepareTarget [100062.25,73200.43,-17193.21];
+_camera camPreparePos [20864.84,14617.88,2.14];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+;comment "hideout end"";
+_camera camPrepareTarget [-77844.22,6942.86,-13810.68];
+_camera camPreparePos [20899.07,14622.03,1.47];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",1]
+exit
+
+
+
+
+

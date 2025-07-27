@@ -1,0 +1,32 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "22:19:30";
+_camera camPrepareTarget [70205.60,87340.80,-16499.66];
+_camera camPreparePos [11059.43,8459.44,1.64];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+titleText ["Your team failed to rescue to scientist, Mission Failed.","PLAIN DOWN"];
+
+~10
+
+
+
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

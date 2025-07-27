@@ -1,0 +1,48 @@
+onLoadIntro = "Defend Air Station Mike-26 from the Enemy forces"
+onLoadMissionTime = 1;
+onLoadIntroTime = 1;
+author="Simsaladoo";
+OnLoadName = "Part 3: The Last Stand";
+OnLoadMission = "The Offensive push has been beaten back, retreat back to the Air Station and Defend it at all costs.";
+loadScreen = "images\MyLogo.jpg";
+aiKills = 1;
+briefing = 0;
+debriefing = 0;
+showMap = 1;
+showCompass = 1;
+showGPS = 1;
+showWatch = 1;
+maxScore = 200;
+avgScore = 50;
+minScore = 0;
+respawn = "BASE";
+respawnDelay = "20";
+respawnVehicleDelay = 180;
+
+/* VAS includes */
+#include "VAS\menu.hpp"
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+class Header
+{
+	gameType = COOP; //game type
+	minPlayers = 1; //min # of players the mission supports
+	maxPlayers = 32; //max # of players the mission supports
+	playerCountMultipleOf = 1; //OFP:Elite option.
+};
+
+class CfgMusic
+{
+	// List of tracks (.ogg files without the .ogg extension)
+	tracks[] = {RosetaStoned};
+
+	// Definition for each sound
+	class RosetaStoned
+	{
+		name = "RosetaStoned"; // Name for mission editor
+		sound[] = {\music\RosetaStoned.ogg, db + 0, 1.0};
+		titles[] = {0, ""};
+	};
+};

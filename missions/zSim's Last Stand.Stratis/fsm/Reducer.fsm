@@ -1,0 +1,408 @@
+/*%FSM<COMPILE "C:\Program Files\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Reducer">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,4346,-125.000000,-200.000000,-25.000000,-150.000000,0.000000,"Init"};
+item1[] = {"ready",4,218,-125.000000,-125.000000,-25.000000,-75.000000,0.000000,"ready"};
+item2[] = {"Update_Variables",2,250,-125.000000,100.000000,-25.000000,150.000000,0.000000,"Update" \n "Variables"};
+item3[] = {"timeout",4,218,-250.000000,-275.000000,-150.000000,-225.000000,2.000000,"timeout"};
+item4[] = {"",7,210,0.000000,-450.000000,10.000000,-450.000000,0.000000,""};
+item5[] = {"End",1,250,-250.000000,-350.000000,-150.000000,-300.000000,0.000000,"End"};
+item6[] = {"duplicate",4,218,0.000000,-275.000000,100.000000,-225.000000,1.000000,"duplicate"};
+item7[] = {"add_groups",2,250,0.000000,-350.000000,100.000000,-300.000000,0.000000,"add groups"};
+item8[] = {"true",8,218,-125.000000,-275.000000,-25.000000,-225.000000,0.000000,"true"};
+item9[] = {"Reduce",4,218,0.000000,175.000000,100.000000,225.000000,1.000000,"Reduce"};
+item10[] = {"Reduce_Group",2,250,0.000000,250.000000,100.000000,300.000000,0.000000,"Reduce Group"};
+item11[] = {"true",8,218,-125.000000,175.000000,-25.000000,225.000000,0.000000,"true"};
+item12[] = {"Init_Variables",2,250,-125.000000,-50.000000,-25.000000,0.000000,0.000000,"Init Variables"};
+item13[] = {"true",8,218,-125.000000,25.000000,-25.000000,75.000000,0.000000,"true"};
+item14[] = {"Fill",4,218,-250.000000,175.000000,-150.000000,225.000000,0.000000,"Fill"};
+item15[] = {"Fill_Group",2,250,-250.000000,250.000000,-150.000000,300.000000,0.000000,"Fill Group"};
+item16[] = {"Dead",4,218,125.000000,100.000000,225.000000,150.000000,1.000000,"Dead"};
+item17[] = {"Delete_Group",2,250,125.000000,25.000000,225.000000,75.000000,0.000000,"Delete Group"};
+link0[] = {0,1};
+link1[] = {0,3};
+link2[] = {0,6};
+link3[] = {1,12};
+link4[] = {2,9};
+link5[] = {2,14};
+link6[] = {2,16};
+link7[] = {3,5};
+link8[] = {6,7};
+link9[] = {7,8};
+link10[] = {8,5};
+link11[] = {9,10};
+link12[] = {10,11};
+link13[] = {11,2};
+link14[] = {12,13};
+link15[] = {13,2};
+link16[] = {14,15};
+link17[] = {15,11};
+link18[] = {16,17};
+link19[] = {17,13};
+globals[] = {25.000000,1,0,0,0,640,480,3,128,6316128,1,-531.761536,466.310730,411.252991,-454.749268,1058,918,1};
+window[] = {2,-1,-1,-1,-1,1255,154,1234,203,3,1076};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "Reducer";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/"_timeWait = time + 30;" \n
+       "_dependantOn = [" \n
+       "	""BIS_fnc_arrayPush""," \n
+       "	""BIS_fnc_listPlayers""," \n
+       "	""RMM_f_getAlive""," \n
+       "	""RMM_f_getGroup""," \n
+       "	""RMM_f_getPosition""," \n
+       "	""RMM_f_getNearest""," \n
+       "	""RMM_f_PrintF""" \n
+       "];" \n
+       "" \n
+       "_module = _this select 0;" \n
+       "_spawn_range = _this select 1;" \n
+       "_reduce_range = _this select 2;" \n
+       "_debug = _this select 3;" \n
+       "" \n
+       "if (_spawn_range > _reduce_range) then {" \n
+       "	private ""_temp_range"";" \n
+       "	_temp_range = _spawn_range;" \n
+       "	_spawn_range = _reduce_range;" \n
+       "	_reduce_range = _temp_range;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "timeout">*/
+        class timeout
+        {
+          priority = 2.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _timeWait"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "duplicate">*/
+        class duplicate
+        {
+          priority = 1.000000;
+          to="add_groups";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isnil ""RMM_Reducer_Groups"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "ready">*/
+        class ready
+        {
+          priority = 0.000000;
+          to="Init_Variables";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"({isnil _x} count _dependantOn == 0) and (local _module) and (isServer)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"({isnil _x} count _dependantOn) call RMM_f_printF;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Update_Variables">*/
+    class Update_Variables
+    {
+      name = "Update_Variables";
+      init = /*%FSM<STATEINIT""">*/"_players = call BIS_fnc_listPlayers;" \n
+       "private ""_group"";"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Dead">*/
+        class Dead
+        {
+          priority = 1.000000;
+          to="Delete_Group";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"{" \n
+           "	if (count (_x call RMM_f_getAlive) == 0) exitwith {" \n
+           "		_group = _x;" \n
+           "		true" \n
+           "	};" \n
+           "} foreach RMM_Reducer_Groups;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Reduce">*/
+        class Reduce
+        {
+          priority = 1.000000;
+          to="Reduce_Group";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"{" \n
+           "	if (count ([_x, _players, _reduce_range] call RMM_f_getNearest) == 0) exitwith {" \n
+           "		_group = _x;" \n
+           "		true" \n
+           "	};" \n
+           "} foreach RMM_Reducer_Groups"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Fill">*/
+        class Fill
+        {
+          priority = 0.000000;
+          to="Fill_Group";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"{" \n
+           "	if (count ([_x, _players, _spawn_range] call RMM_f_getNearest) > 0) exitwith {" \n
+           "		_group = _x;" \n
+           "		true" \n
+           "	};" \n
+           "} foreach RMM_Reducer_ReducedGroups"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/"deletevehicle _module;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "add_groups">*/
+    class add_groups
+    {
+      name = "add_groups";
+      init = /*%FSM<STATEINIT""">*/"if (_debug) then {" \n
+       "	private ""_message"";" \n
+       "	_message = format [""(RMM_REDUCER) Duplicate FSM Running --- time : %1"", time];" \n
+       "	[_message, 2] call RMM_f_PrintF;" \n
+       "};" \n
+       "" \n
+       "_synced = synchronizedObjects _module;" \n
+       "_module synchronizeObjectsRemove _synced;" \n
+       "{" \n
+       "	if ({isplayer _x} count (units _x) == 0) then {" \n
+       "		[RMM_Reducer_Groups, group _x] call BIS_fnc_arrayPush;" \n
+       "	};" \n
+       "} foreach _synced;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Reduce_Group">*/
+    class Reduce_Group
+    {
+      name = "Reduce_Group";
+      init = /*%FSM<STATEINIT""">*/"if (_debug) then {" \n
+       "	private ""_message"";" \n
+       "	_message = format [""(RMM_REDUCER) %1 Reduced --- time : %2"", _group, time];" \n
+       "	[_message, 3] call RMM_f_PrintF;" \n
+       "};" \n
+       "" \n
+       "RMM_Reducer_Groups = RMM_Reducer_Groups - [_group];" \n
+       "[RMM_Reducer_ReducedGroups, _group] call BIS_fnc_arrayPush;" \n
+       "" \n
+       "_units = (units _group) - [leader _group];" \n
+       "_list = [];" \n
+       "{" \n
+       "	_x call _fReduce;" \n
+       "} foreach _units;" \n
+       "" \n
+       "_index = RMM_Reducer_ReducedGroups find _group;" \n
+       "RMM_Reducer_Reduced set [_index, _list];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Update_Variables";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Init_Variables">*/
+    class Init_Variables
+    {
+      name = "Init_Variables";
+      init = /*%FSM<STATEINIT""">*/"if (_debug) then {" \n
+       "	private ""_message"";" \n
+       "	_message = format [""(RMM_REDUCER) _this : %1 --- time : %2"", _this, time];" \n
+       "	[_message, 3] call RMM_f_PrintF;" \n
+       "};" \n
+       "" \n
+       "RMM_Reducer_Groups = [];" \n
+       "RMM_Reducer_Reduced = [];" \n
+       "RMM_Reducer_ReducedGroups = [];" \n
+       "" \n
+       "_synced = synchronizedObjects _module;" \n
+       "_module synchronizeObjectsRemove _synced;" \n
+       "{" \n
+       "	if ({isplayer _x} count (units _x) == 0) then {" \n
+       "		[RMM_Reducer_Groups, group _x] call BIS_fnc_arrayPush;" \n
+       "	};" \n
+       "} foreach (_synced - [_module]);" \n
+       "" \n
+       "if (_debug) then {" \n
+       "	private ""_message"";" \n
+       "	_message = format [""(RMM_REDUCER) Verified Synced Groups : %1 --- time : %2"", RMM_Reducer_Groups, time];" \n
+       "	[_message, 3] call RMM_f_PrintF;" \n
+       "};" \n
+       "" \n
+       "deletevehicle _module;" \n
+       "" \n
+       "_fReduce = {" \n
+       "	private [""_type"", ""_weapons"", ""_magazines"", ""_vehicle"", ""_vehicle_pos""];" \n
+       "	_type = typeof _this;" \n
+       "	_weapons = weapons _this;" \n
+       "	_magazines = magazines _this;" \n
+       "	_vehicle = assignedVehicle _this;" \n
+       "	_vehicle_pos = assignedVehicleRole _this;" \n
+       "	if !(""Driver"" in _vehicle_pos) then {" \n
+       "		_list set [count _list, [_type, _weapons, _magazines, _vehicle, _vehicle_pos]];" \n
+       "		_this setpos [0,0,0];" \n
+       "		deletevehicle _this;" \n
+       "	};" \n
+       "};" \n
+       "" \n
+       "_fFill = {" \n
+       "	private [""_type"", ""_weapons"", ""_magazines"", ""_vehicle"", ""_unit"", ""_index""];" \n
+       "	_type = _x select 0;" \n
+       "	_weapons = _x select 1;" \n
+       "	_magazines = _x select 2;" \n
+       "	_vehicle = _x select 3;" \n
+       "	_vehicle_pos = _x select 4;" \n
+       "	_unit = _group createUnit [_type, _position, [], 20, ""FORM""];" \n
+       "	{_unit removeMagazine _x} foreach (magazines _unit);" \n
+       "	{_unit removeWeapon _x} foreach (weapons _unit);" \n
+       "	{_unit addMagazine _x} foreach _magazines;" \n
+       "	{_unit addWeapon _x} foreach _weapons;" \n
+       "	if (count _vehicle_pos > 0) then {" \n
+       "		switch(_vehicle_pos select 0) do {" \n
+       "			case ""Cargo"": {" \n
+       "				_unit moveInCargo  _vehicle;" \n
+       "			};" \n
+       "			case ""Turret"": {" \n
+       "				_index = _vehicle_pos select 1;" \n
+       "				_unit moveInTurret [_vehicle, _index];" \n
+       "			};" \n
+       "		};" \n
+       "	};" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Update_Variables";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Fill_Group">*/
+    class Fill_Group
+    {
+      name = "Fill_Group";
+      init = /*%FSM<STATEINIT""">*/"if (_debug) then {" \n
+       "	private ""_message"";" \n
+       "	_message = format [""(RMM_REDUCER) %1 Filled --- time : %2"", _group, time];" \n
+       "	[_message, 3] call RMM_f_PrintF;" \n
+       "};" \n
+       "" \n
+       "_index = RMM_Reducer_ReducedGroups find _group;" \n
+       "_list = RMM_Reducer_Reduced select _index;" \n
+       "" \n
+       "_position = _group call RMM_f_getPosition;" \n
+       "{" \n
+       "	_x call _fFill;" \n
+       "} foreach _list;" \n
+       "" \n
+       "RMM_Reducer_Reduced set [_index, objNull];" \n
+       "RMM_Reducer_Reduced = RMM_Reducer_Reduced - [objNull];" \n
+       "" \n
+       "RMM_Reducer_ReducedGroups = RMM_Reducer_ReducedGroups - [_group];" \n
+       "[RMM_Reducer_Groups, _group] call BIS_fnc_arrayPush;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Update_Variables";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Delete_Group">*/
+    class Delete_Group
+    {
+      name = "Delete_Group";
+      init = /*%FSM<STATEINIT""">*/"if (_debug) then {" \n
+       "	private ""_message"";" \n
+       "	_message = format [""(RMM_REDUCER) %1 Deleted --- time : %2"", _group, _time];" \n
+       "	[_message, 3] call RMM_f_PrintF;" \n
+       "};" \n
+       "" \n
+       "RMM_Reducer_Groups = RMM_Reducer_Groups - [_group];" \n
+       "deleteGroup _group;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="Update_Variables";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/

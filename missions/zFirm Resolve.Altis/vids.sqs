@@ -1,0 +1,136 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 2]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;comment "officer";
+_camera camPrepareTarget [99114.27,-36090.66,5506.21];
+_camera camPreparePos [11587.96,11962.35,0.91];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "helis";
+_camera camPrepareTarget [109436.41,-8755.64,-623.61];
+_camera camPreparePos [11604.22,11937.34,1.42];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "jet guy";
+_camera camPrepareTarget [-5271.14,108299.88,-20059.68];
+_camera camPreparePos [11671.98,11808.66,5.45];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "base";
+_camera camPrepareTarget [3664.61,-85363.88,-20935.53];
+_camera camPreparePos [11619.54,12083.20,31.66];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+;comment "farp";
+_camera camPrepareTarget [-57139.81,-59710.84,-27690.04];
+_camera camPreparePos [6075.63,12596.23,17.43];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "overhead";
+_camera camPrepareTarget [73261.80,73958.63,-28501.21];
+_camera camPreparePos [2414.44,9424.33,91.92];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+
+;comment "boat";
+_camera camPrepareTarget [-19226.36,105832.38,-14902.72];
+_camera camPreparePos [2671.66,9407.18,18.63];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+
+
+
+
+
+;comment "dome shot;
+_camera camPrepareTarget [60301.15,91132.98,-509.17];
+_camera camPreparePos [2505.96,9527.58,2.88];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+
+;comment "chopper";
+_camera camPrepareTarget [38891.46,-82972.54,-9593.63];
+_camera camPreparePos [2529.43,9684.98,6.80];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+
+
+
+
+
+;comment "ship & tower1";
+_camera camPrepareTarget [90863.64,55211.88,-14021.24];
+_camera camPreparePos [3061.53,9441.84,8.22];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+
+
+
+
+;comment "tower shot";
+_camera camPrepareTarget [66767.48,-31455.85,-64607.85];
+_camera camPreparePos [2489.47,9616.79,39.09];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+
+
+
+
+
+;comment "inc columb";
+_camera camPrepareTarget [65809.88,90560.96,-24041.43];
+_camera camPreparePos [9416.64,11569.71,21.06];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+
+;comment "you";
+_camera camPrepareTarget [106825.11,-17942.26,-5604.96];
+_camera camPreparePos [11569.72,11970.09,1.77];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

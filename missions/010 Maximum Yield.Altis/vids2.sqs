@@ -1,0 +1,36 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+//NATO backup choppers
+
+;comment "19:48:39";
+_camera camPrepareTarget [73307.43,97186.92,-7654.33];
+_camera camPreparePos [17611.11,14491.75,45.46];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+;comment "FWDB";
+_camera camPrepareTarget [79918.58,100074.30,-30106.02];
+_camera camPreparePos [25906.64,21499.35,15.81];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

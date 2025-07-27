@@ -1,0 +1,29 @@
+b1 action ["eject",chop]
+~1
+b2 action ["eject",chop]
+~1
+b3 action ["eject",chop]
+~1
+b4 action ["eject",chop]
+~1
+b5 action ["eject",chop]
+~1
+b6 action ["eject",chop]
+~1
+b7 action ["eject",chop]
+~1
+b8 action ["eject",chop]
+~1
+b9 action ["eject",chop]
+~1
+b10 action ["eject",chop]
+~1
+b2 doFollow b1
+b3 doFollow b1
+b4 doFollow b1
+b5 doFollow b1
+b6 doFollow b1
+b7 doFollow b1
+b8 doFollow b1
+b9 doFollow b1
+b10 doFollow b1

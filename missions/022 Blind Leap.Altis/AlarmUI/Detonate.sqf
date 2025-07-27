@@ -1,0 +1,21 @@
+bombexplode = true; hint "Detonation Imminent"; 
+bomb1 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar1;
+bomb2 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar2;
+bomb3 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar3;
+bomb4 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar4;
+bomb5 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar5;
+bomb6 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar6;
+bomb7= "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar7;
+bomb8 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar8;
+bomb9 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar9;
+bomb10 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar10;
+bomb11 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar11;
+bomb12 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar12;
+bomb13 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar13;
+bomb14 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar14;
+bomb15 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar15;
+bomb16 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar16;
+bomb17 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar17;
+bomb18 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar18;
+bomb19 = "Bo_GBU12_LGB_MI10" createVehicle visiblePosition bombcar19;
+
