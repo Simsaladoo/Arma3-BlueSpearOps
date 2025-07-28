@@ -1,0 +1,98 @@
+version=1;
+blood=1;
+singleVoice=0;
+class Identity
+{
+	unitType=2;
+	squad="";
+	unitId=3040;
+};
+anisoFilter=0;
+textureQuality=0;
+shadowQuality=1;
+tripleHead=0;
+class DifficultyPresets
+{
+	class CustomDifficulty
+	{
+		class Options
+		{
+			groupIndicators=0;
+			friendlyTags=0;
+			enemyTags=0;
+			detectedMines=0;
+			commands=0;
+			waypoints=0;
+			weaponInfo=2;
+			stanceIndicator=0;
+			reducedDamage=0;
+			staminaBar=0;
+			weaponCrosshair=0;
+			visionAid=0;
+			thirdPersonView=0;
+			cameraShake=1;
+			scoreTable=0;
+			deathMessages=0;
+			vonID=0;
+			mapContentFriendly=0;
+			mapContentEnemy=0;
+			mapContentMines=0;
+			autoReport=0;
+			multipleSaves=0;
+			tacticalPing=0;
+		};
+		aiLevelPreset="AILevelMedium";
+	};
+	class CustomAILevel
+	{
+		skillAI=0.5;
+		precisionAI=0.5;
+	};
+};
+headBob=1;
+adaptiveCrosshair=1;
+floatingZoneArea=0;
+RTDEnabled=0;
+RTDFullHUD=1;
+RTDRoughLanding=1;
+RTDWindDynamic=0;
+RTDAutoTrim=1;
+RTDStressDamage=0;
+showTitles=1;
+useImperialSystem=0;
+vehicleFreelook=0;
+useIncapacitatedState=1;
+tutorialHints=1;
+streamFriendlyUI=0;
+instructorFigure=1;
+showRadio=1;
+wBrowserSP=0;
+class wBrowserMP
+{
+};
+bootCampWarning=1;
+sceneComplexity=100000;
+shadowZDistance=100;
+viewDistance=1000.0001;
+preferredObjectViewDistance=800.00006;
+pipViewDistance=500.00006;
+terrainGrid=25;
+volumeCD=5;
+volumeFX=5;
+volumeSpeech=5;
+volumeVoN=10;
+vonRecThreshold=0.029999999;
+volumeMapDucking=1;
+volumeUI=1;
+gamma=1;
+ppBrightness=1.01;
+ppContrast=1.0599999;
+ppSaturation=1.08;
+brightness=1;
+fovTop=0.75;
+fovLeft=1.125;
+uiTopLeftX=0.25555554;
+uiTopLeftY=0.22499999;
+uiBottomRightX=0.74444449;
+uiBottomRightY=0.77499998;
+IGUIScale=0.55000001;
