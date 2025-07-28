@@ -1,0 +1,36 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "target jump";
+_camera camPrepareTarget [78773.61,72558.73,-50327.98];
+_camera camPreparePos [12759.57,17551.63,834.31];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Co-Pilot: Approaching the Jump Point!  Ready Up!","PLAIN DOWN"];
+
+
+
+~4
+;comment "21:34:58";
+_camera camPrepareTarget [50279.97,48816.09,-86003.30];
+_camera camPreparePos [12961.81,17720.49,1458.13];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Co-Pilot: Make sure to link up with IND before heading into town!","PLAIN DOWN"];
+~3
+
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

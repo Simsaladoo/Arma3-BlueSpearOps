@@ -1,0 +1,131 @@
+
+titlecut [" ","BLACK IN", 2]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "officer";
+_camera camPrepareTarget [91510.55,-48139.04,25.69];
+_camera camPreparePos [11586.52,11962.66,1.31];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["5 September 5:00 AM","PLAIN DOWN"];
+~4
+
+;comment "helo";
+_camera camPrepareTarget [-15230.53,104890.48,-25038.51];
+_camera camPreparePos [11623.09,11885.27,16.06];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0 
+
+~4
+
+
+;comment "facility";
+_camera camPrepareTarget [55799.96,101046.22,-38725.32];
+_camera camPreparePos [14229.00,18795.19,41.18];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Blue Spear operatives are sent behind enemy lines to destroy a chemical weapons cache.","PLAIN DOWN"];
+
+~4
+
+;comment "back roof";
+_camera camPrepareTarget [-71861.99,-21301.28,-30502.76];
+_camera camPreparePos [14422.54,18965.22,14.07];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "tanks";
+_camera camPrepareTarget [-84360.80,25972.41,-13870.40];
+_camera camPreparePos [14421.06,19002.90,4.39];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["The tanks are heaviuly guarded, but they must be destroyed at all costs.","PLAIN DOWN"];
+~3
+
+;comment "patrol";
+_camera camPrepareTarget [50737.96,-73141.39,-13884.19];
+_camera camPreparePos [14369.63,18964.54,1.16];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+;comment "reverse patrol";
+_camera camPrepareTarget [-82546.80,-5393.25,3045.94];
+_camera camPreparePos [14383.32,18962.18,1.26];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+
+
+
+;comment "gate";
+_camera camPrepareTarget [-82825.08,42200.44,1740.08];
+_camera camPreparePos [14402.84,18878.87,0.36];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["The officer responsible for this site is bound to be somewhere in the facility.","PLAIN DOWN"];
+~5
+
+
+
+;comment "street";
+_camera camPrepareTarget [106464.09,57287.89,-5984.08];
+_camera camPreparePos [14343.92,18845.22,1.24];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+;comment "railguy";
+_camera camPrepareTarget [113276.02,9285.74,10461.35];
+_camera camPreparePos [14288.19,18923.22,6.96];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["He must also be eliminated at all costs.","PLAIN DOWN"];
+~3
+
+
+;comment "alan";
+_camera camPrepareTarget [38947.23,-77090.04,-12970.04];
+_camera camPreparePos [14362.18,18963.81,1.65];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["But be prepared as he in possession of some very serious hardware.","PLAIN DOWN"];
+~3
+
+;comment "alan closeup";
+_camera camPrepareTarget [113075.94,10984.80,13897.15];
+_camera camPreparePos [14362.35,18957.68,1.23];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Dispatch him.","PLAIN DOWN"];
+~3
+
+;comment "get in";
+_camera camPrepareTarget [-65070.55,70180.77,-26946.89];
+_camera camPreparePos [11613.83,11939.90,1.90];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Board the Helo to begin the mission.  Good Hunting.","PLAIN DOWN"];
+
+~4
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+
+
+

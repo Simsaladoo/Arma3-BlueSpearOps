@@ -1,0 +1,69 @@
+
+titlecut [" ","BLACK IN", 2]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;comment "20:55:22";
+_camera camPrepareTarget [113087.08,20178.50,-11073.96];
+_camera camPreparePos [13717.79,18521.95,1.61];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+titleText ["Good morning, comrades. I have intel on your objectives.","PLAIN DOWN"];
+~5
+;comment "20:56:08";
+_camera camPrepareTarget [3669.73,-80356.08,-11018.02];
+_camera camPreparePos [13718.80,18523.66,1.61];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["First, make sure to grab some explosives here in the crates.","PLAIN DOWN"];
+~4
+
+
+
+
+;comment "20:56:31";
+_camera camPrepareTarget [109228.06,4486.06,-27343.68];
+_camera camPreparePos [14148.67,18926.18,39.07];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Then make your way to the largest tank, the South side of the base.","PLAIN DOWN"];
+~3
+
+;comment "20:56:49";
+_camera camPrepareTarget [7656.51,-74461.20,-34966.08];
+_camera camPreparePos [14255.39,18971.68,11.20];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Should be easy to get to, you should have no problem.","PLAIN DOWN"];
+~5
+
+;comment "20:57:05";
+_camera camPrepareTarget [-23705.49,-59517.19,-48703.68];
+_camera camPreparePos [14396.28,19032.03,19.28];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["But the majority of their chemicals are on the far side, and heavily guarded.","PLAIN DOWN"];
+~5
+
+;comment "20:57:50";
+_camera camPrepareTarget [-82856.19,29596.05,20709.13];
+_camera camPreparePos [14409.40,19006.93,0.25];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Take your time and Good Hunting, comrade.","PLAIN DOWN"];
+~4
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+
+
+

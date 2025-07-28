@@ -1,0 +1,29 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+//Second Scene
+
+;comment "3:37:13";
+_camera camPrepareTarget [-15510.51,107684.15,7348.80];
+_camera camPreparePos [11656.81,11724.45,1.19];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Evac is on it's way!  Hold in there!","PLAIN DOWN"];
+
+
+~6
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

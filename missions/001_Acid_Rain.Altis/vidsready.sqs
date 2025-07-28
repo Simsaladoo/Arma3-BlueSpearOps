@@ -1,0 +1,76 @@
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "crew getin";
+_camera camPrepareTarget [-12848.89,-78595.88,-34634.52];
+_camera camPreparePos [11614.42,11958.09,4.79];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Co-Pilot: Allright boys, we'll get you there in one piece!","PLAIN DOWN"];
+~6
+
+;comment "21:20:58";
+_camera camPrepareTarget [-35017.19,100306.90,-4067.15];
+_camera camPreparePos [11615.01,11940.10,1.57];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["","PLAIN DOWN"];
+~5
+
+;comment "21:22:13";
+_camera camPrepareTarget [-16176.84,-83703.19,-8871.54];
+_camera camPreparePos [11613.11,11944.86,1.85];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Pilot: James...shut up. Don't jinx this","PLAIN DOWN"];
+~5
+
+;comment "21:22:34";
+_camera camPrepareTarget [68367.89,93794.38,-8871.53];
+_camera camPreparePos [11612.07,11941.48,1.81];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Co-Pilot James: Jinx what?  What did I do?","PLAIN DOWN"];
+~5
+
+;comment "21:23:26";
+_camera camPrepareTarget [19639.82,-81686.58,34192.16];
+_camera camPreparePos [11611.98,11951.45,0.20];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Pilot Faulkner: Nothing, and I'll be damned if you touch my controls.","PLAIN DOWN"];
+~5
+
+;comment "21:23:48";
+_camera camPrepareTarget [-8524.55,109811.09,222.21];
+_camera camPreparePos [11630.26,11863.40,12.09];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Co-Pilot James: We'll see about that, old man.","PLAIN DOWN"];
+~8
+titleText ["","PLAIN DOWN"];
+
+
+
+
+;comment "21:48:39";
+_camera camPrepareTarget [17490.98,25305.04,-98284.17];
+_camera camPreparePos [11604.06,11819.04,658.29];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Co-Pilot James: Sit tight, soldiers. We're climbing to jump altitude before we approach.","PLAIN DOWN"];
+~10
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+
