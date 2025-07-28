@@ -1,8 +1,0 @@
-OpTest action ["eject",chop]
-~1
-OpTest_1 action ["eject",chop]
-~1
-OpTest_2 action ["eject",chop]
-~1
-OpTest_1 doFollow OpTest
-OpTest_2 doFollow OpTest

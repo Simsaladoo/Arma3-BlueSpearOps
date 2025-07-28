@@ -1,1 +1,0 @@
-POWS = [derp1,derp2]

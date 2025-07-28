@@ -1,7 +1,0 @@
-OnLoadMission = "Virtual Ammobox System";
-respawn = BASE;
-respawndelay = 10;
-disabledAI = true;
-
-#include "gear\common.hpp"
-#include "gear\menu.hpp"

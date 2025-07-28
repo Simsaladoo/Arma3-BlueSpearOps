@@ -1,2 +1,0 @@
-
-_handle=createdialog "LappyB";

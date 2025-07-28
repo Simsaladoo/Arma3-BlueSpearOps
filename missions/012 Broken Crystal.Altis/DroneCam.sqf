@@ -1,3 +1,0 @@
-
-_handle=createdialog "DroneCam";
-
