@@ -3,7 +3,6 @@ titlecut [" ","BLACK IN", 2]
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-//first scene
 ;comment "officer";
 _camera camPrepareTarget [91510.55,-48139.04,25.69];
 _camera camPreparePos [11586.52,11962.66,1.31];

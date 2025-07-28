@@ -1,11 +1,9 @@
-//Intro fade/Camera Creation
 
 titlecut [" ","BLACK IN", 3]
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 
-//Second Scene
 
 ;comment "3:37:13";
 _camera camPrepareTarget [-15510.51,107684.15,7348.80];
