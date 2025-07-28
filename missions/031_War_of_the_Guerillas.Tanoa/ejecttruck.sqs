@@ -1,0 +1,23 @@
+A1 action ["eject",choperd]
+~1
+A2 action ["eject",choperd]
+~1
+A3 action ["eject",choperd]
+~1
+A4 action ["eject",choperd]
+~1
+A5 action ["eject",choperd]
+~1
+A6 action ["eject",choperd]
+~1
+A7 action ["eject",choperd]
+~1
+A8 action ["eject",choperd]
+~1
+A2 doFollow A1
+A3 doFollow A1
+A4 doFollow A1
+A5 doFollow A1
+A6 doFollow A1
+A7 doFollow A1
+A8 doFollow A1

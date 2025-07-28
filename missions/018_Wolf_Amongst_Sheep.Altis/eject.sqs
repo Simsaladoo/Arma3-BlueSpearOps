@@ -1,0 +1,11 @@
+a1 action ["GETOUT",gaaag]
+~1
+a2 action ["GETOUT",gaaag]
+~1
+a3 action ["GETOUT",gaaag]
+~1
+a4 action ["GETOUT",gaaag]
+~1
+a2 doFollow a1
+a3 doFollow a1
+a4 doFollow a1

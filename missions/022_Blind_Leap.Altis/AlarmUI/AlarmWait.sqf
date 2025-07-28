@@ -1,0 +1,1 @@
+hint "You must update the firmware to disable the bomb";

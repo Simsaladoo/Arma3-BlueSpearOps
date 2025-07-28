@@ -1,0 +1,1 @@
+hint "You must update the firmware to bypass the alarm";

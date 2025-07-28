@@ -1,0 +1,115 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "officer 1";
+_camera camPrepareTarget [103408.09,32767.85,-6563.37];
+_camera camPreparePos [6897.11,7423.62,14.76];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+;comment "officer 2";
+_camera camPrepareTarget [-6797.77,-91413.71,-6563.15];
+_camera camPreparePos [6898.57,7425.22,14.76];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+
+
+
+;comment "new airbase backside 1";
+_camera camPrepareTarget [77864.63,-60321.64,-18036.60];
+_camera camPreparePos [6773.71,7572.03,36.93];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~4
+
+;comment "airbase fort overlooking radar";
+_camera camPrepareTarget [42496.23,98767.44,-19641.74];
+_camera camPreparePos [7010.93,7366.71,20.17];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 
+
+~4
+
+
+
+;comment "convoy 1";
+_camera camPrepareTarget [40097.63,-78080.84,-29251.33];
+_camera camPreparePos [7190.33,11651.71,20.68];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "WARLORDS";
+_camera camPrepareTarget [-89645.70,23748.95,-21282.90];
+_camera camPreparePos [7267.45,11587.90,2.38];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "dead convoy 3";
+_camera camPrepareTarget [106961.84,18813.92,135.11];
+_camera camPreparePos [7222.44,11599.37,10.58];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4 
+
+;comment "above convoy";
+_camera camPrepareTarget [-73536.69,-33580.77,-36799.25];
+_camera camPreparePos [7535.85,11723.18,82.78];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~5
+
+;comment "friends in field";
+_camera camPrepareTarget [-91959.55,9265.67,-9892.31];
+_camera camPreparePos [7499.45,11650.12,1.42];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+
+
+;comment "hostages town";
+_camera camPrepareTarget [91258.45,63679.19,-5472.83];
+_camera camPreparePos [6377.80,11094.35,9.38];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~4
+
+
+
+;comment "hostages";
+_camera camPrepareTarget [-67801.42,-50728.91,-25680.34];
+_camera camPreparePos [6446.39,11135.56,3.40];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+titlecut ["","BLACK IN",1]
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

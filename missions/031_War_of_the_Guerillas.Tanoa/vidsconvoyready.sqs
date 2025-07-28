@@ -1,0 +1,57 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+
+;comment "truck levae";
+_camera camPrepareTarget [-34528.68,-79458.40,-27140.37];
+_camera camPreparePos [6886.01,7419.70,5.11];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["We will be riding for a short while, so get comfortable","PLAIN DOWN"];
+
+~4
+
+;comment "ALL LEAVE";
+_camera camPrepareTarget [4514.81,99583.15,-38365.24];
+_camera camPreparePos [6871.53,7284.72,43.65];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+;comment "plane";
+_camera camPrepareTarget [65120.71,87688.65,-10751.23];
+_camera camPreparePos [6824.92,7154.89,12.41];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["A Blackfish is also joining you for Close Air Support.","PLAIN DOWN"];
+~5
+
+
+;comment "EXITR";
+_camera camPrepareTarget [98537.27,43329.33,-17000.74];
+_camera camPreparePos [6731.84,7520.32,3.67];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["And, again--Blue Spear, welcome to Tanoa.","PLAIN DOWN"];
+~6
+
+
+
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

@@ -1,0 +1,22 @@
+alarmIson = false;
+hint "Disarming security system.";
+~1
+hint "Disarming security system..";
+~1
+hint "Disarming security system...";
+~1
+hint "Disarming security system.";
+~1
+hint "Disarming security system..";
+~1
+hint "Disarming security system...";
+~1
+hint "Disarming security system.";
+~1
+hint "Disarming security system..";
+~1
+hint "Disarming security system...";
+~1
+lockdownmode = true;
+hint "Security System Disarmed";
+

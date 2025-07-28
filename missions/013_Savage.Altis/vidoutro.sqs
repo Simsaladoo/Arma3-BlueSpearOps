@@ -1,0 +1,35 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "sub";
+_camera camPrepareTarget [-46408.45,-56563.73,-7323.31];
+_camera camPreparePos [22957.28,15095.53,2.78];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~15
+
+
+
+//Ending fade transition
+
+titlecut ["","BLACK OUT",1]
+~1
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

@@ -1,0 +1,144 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "officer";
+_camera camPrepareTarget [110742.42,25267.10,29.77];
+_camera camPreparePos [11630.22,11982.08,1.53];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~8
+
+
+;comment "chopper opening";
+_camera camPrepareTarget [72502.36,90447.89,-10728.34];
+_camera camPreparePos [11604.58,11867.25,44.28];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~7
+
+;comment "open reverse";
+_camera camPrepareTarget [-14599.67,-84349.47,4306.56];
+_camera camPreparePos [11737.49,12024.87,2.07];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~8
+
+;comment "opening last";
+_camera camPrepareTarget [99024.83,58067.27,-15349.66];
+_camera camPreparePos [11661.02,11925.15,69.18];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+
+~7
+
+
+//Black screen fade transition
+
+titlecut ["","BLACK IN","2"]
+~2
+
+
+//Second Scene
+
+;comment "dock divers";
+_camera camPrepareTarget [23759.07,-86421.42,6.71];
+_camera camPreparePos [14233.91,13119.54,3.87];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "dock tower base";
+_camera camPrepareTarget [-79277.74,45949.98,-12599.87];
+_camera camPreparePos [14301.62,13030.91,6.41];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "dock recon";
+_camera camPrepareTarget [-43885.85,93550.16,11229.92];
+_camera camPreparePos [14323.99,13016.97,1.38];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "dock tower roof";
+_camera camPrepareTarget [70790.24,75707.32,-53602.79];
+_camera camPreparePos [14288.85,13009.83,27.11];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "dock checkpoint ground";
+_camera camPrepareTarget [-39886.19,-71242.48,10.15];
+_camera camPreparePos [14017.37,12985.82,1.56];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+
+//end scene
+
+;comment "23:43:35";
+_camera camPrepareTarget [104410.38,-25864.39,-10302.71];
+_camera camPreparePos [13476.61,14441.90,15.23];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+
+;comment "trawler with cargo";
+_camera camPrepareTarget [-83800.82,28844.57,-9175.15];
+_camera camPreparePos [14731.16,14455.67,12.35];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~6
+
+;comment "endgame area";
+_camera camPrepareTarget [-80111.36,-16035.48,-9169.43];
+_camera camPreparePos [14685.48,14463.96,-40.53];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~8
+
+;comment "dock checkpoint ground";
+_camera camPrepareTarget [-39886.19,-71242.48,10.15];
+_camera camPreparePos [14017.37,12985.82,1.56];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~6
+
+
+
+//Ending fade transition
+
+titlecut ["","BLACK OUT",2]
+~2
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

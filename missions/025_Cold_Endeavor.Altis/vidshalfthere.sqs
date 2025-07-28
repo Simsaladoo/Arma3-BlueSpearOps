@@ -1,0 +1,48 @@
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "19:10:34";
+_camera camPrepareTarget [57023.54,-71462.20,-28948.27];
+_camera camPreparePos [10430.74,12133.71,35.41];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+ titleText ["Convoy Cmdr: Turning south towards Drimea, keep your fucking eyes open ladies!","PLAIN DOWN"];
+
+~5
+
+
+
+
+;comment "19:09:36";
+_camera camPrepareTarget [35781.20,-84088.71,-18099.26];
+_camera camPreparePos [10742.73,11014.95,10.52];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~6
+ titleText ["Convoy Cmdr: Bound to be someone lurking around near the choke point.","PLAIN DOWN"];
+;comment "19:10:00";
+_camera camPrepareTarget [-29004.53,100780.78,-18132.82];
+_camera camPreparePos [10792.91,10852.70,9.39];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~6
+
+
+
+
+
+titlecut ["","BLACK IN",1]
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

@@ -1,0 +1,38 @@
+		
+		C://dir/w/---attack wave plan---/p/-i//
+
+[
+wave1 (spawns 360 sec in)
+	spawn1			armed offroad		"O_G_Offroad_01_armed_F"
+	spawn2 			armed offroad		"O_G_Offroad_01_armed_F"
+	spawn3 			armed offroad		"O_G_Offroad_01_armed_F"
+	enemybase3		armed offroad		"O_Soldier_TL_F", "O_Soldier_F", "O_Soldier_AR_F", "O_Soldier_AT_F", "O_Medic_F", "O_Soldier_GL_F","O_Soldier_F","O_Soldier_GL_F","O_Soldier_AR_F","O_Soldier_F","O_Soldier_GL_F","O_Soldier_AR_F"
+	spawn4			wheeled apc		  	O_APC_Wheeled_02_rcws_F
+	
+wave2 (spawns 540 sec in)
+	enemybase3		soldiers	"O_Soldier_TL_F", "O_Soldier_F", "O_Soldier_AR_F", "O_Soldier_AT_F", "O_Medic_F", "O_Soldier_GL_F","O_Soldier_F","O_Soldier_GL_F","O_Soldier_AR_F","O_Soldier_F","O_Soldier_GL_F","O_Soldier_AR_F"
+	spawn4 			t-100 mbt			O_MBT_02_cannon_F
+	spawn5			armed offroad		O_G_Offroad_01_armed_F
+	spawn6			mrap hmg			O_MRAP_02_hmg_F
+	spawn7			cas uav				O_UAV_02_CAS_F
+	spawn8			speedboat hmg		O_Boat_Armed_01_hmg_F
+	
+wave3 (spawns 900 sec in)
+	spawn9			armed offroad		O_G_Offroad_01_armed_F
+	spawn10			sdv					O_SDV_01_F
+	spawn11 		speedboat hmg		O_Boat_Armed_01_hmg_F
+	spawn12			t-100 mbt			O_MBT_02_cannon_F
+	spawn13 		btr-k				O_APC_Tracked_02_cannon_F
+	
+wave4 (Zaros defense of Riga hilltop)
+	spawn14			armed offroad		O_G_Offroad_01_armed_F
+	spawn15			armed offroad		O_G_Offroad_01_armed_F
+	spawn16			armed offroad		O_G_Offroad_01_armed_F
+	spawn17			white van			O_G_Van_01_transport_F
+	
+wave5 (win wave)
+	spawn18			a-16
+	spawn19			a-16
+	spawn20			a-16
+	spawn21			huron
+]

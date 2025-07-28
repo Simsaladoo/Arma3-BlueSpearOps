@@ -1,0 +1,57 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "landing far";
+_camera camPrepareTarget [-88716.21,16414.46,-27005.63];
+_camera camPreparePos [7165.37,7393.17,33.64];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Welcome to Tanoa, Operative","PLAIN DOWN"];
+~4
+
+
+
+
+
+;comment "landing close";
+_camera camPrepareTarget [-88716.21,16414.46,-27005.83];
+_camera camPreparePos [7118.21,7409.93,18.89];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["This is the new AO for our upcoming Blue Spear Ops","PLAIN DOWN"];
+~4
+
+
+
+;comment "17:35:40";
+_camera camPrepareTarget [103820.59,-12680.81,-14781.25];
+_camera camPreparePos [6979.84,7379.53,2.53];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Cmdr. Zenon is waiting at the Aid Station.  I'll let him brief you on this mission...","PLAIN DOWN"];
+~5
+
+;comment "16:54:39";
+_camera camPrepareTarget [-83463.02,-33591.66,-12324.46];
+_camera camPreparePos [6899.52,7424.11,14.72];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["I'm too busy...coffee ain't gonna drink itself.","PLAIN DOWN"];
+~3
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

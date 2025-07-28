@@ -1,0 +1,131 @@
+//Intro fade/Camera Creation
+
+titlecut [" ","BLACK IN", 3]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+//first scene
+;comment "officer";
+_camera camPrepareTarget [44327.83,108414.85,13.89];
+_camera camPreparePos [14276.31,13036.87,1.42];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["10:40 November 22","PLAIN DOWN"];
+~4
+
+;comment "spawn";
+_camera camPrepareTarget [98622.77,59416.77,-27441.62];
+_camera camPreparePos [10847.69,20265.12,10.59];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~4
+
+;comment "high up abdera";
+_camera camPrepareTarget [-28713.63,106357.27,-32526.52];
+_camera camPreparePos [9669.47,20061.91,59.28];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Blue Spear operatives are sent to liberate a research lab's staff being held hostage by opfor radicals.","PLAIN DOWN"];
+
+~4
+
+;comment "abdera";
+_camera camPrepareTarget [-58712.02,-52237.40,-8736.53];
+_camera camPreparePos [9522.87,20324.77,1.71];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~3
+
+;comment "tanks";
+_camera camPrepareTarget [18620.51,-77318.94,-4761.72];
+_camera camPreparePos [9514.20,22157.35,2.81];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["The base itself is surrounded with infantry and armor, so you will move in tandem with Armor designated Bravo 2-1.","PLAIN DOWN"];
+~5
+
+;comment "enemy base";
+_camera camPrepareTarget [31556.24,-69421.88,-34200.21];
+_camera camPreparePos [9149.57,21813.59,47.33];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+
+;comment "hostage cam";
+_camera camPrepareTarget [97304.46,-9951.44,-35114.36];
+_camera camPreparePos [9209.27,21743.46,8.10];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["These hostages are being held in the largest dome in the base, they are under constant supervision.","PLAIN DOWN"];
+
+~5
+
+
+;comment "hostage 1 closeup";
+_camera camPrepareTarget [87236.54,82875.88,-13284.91];
+_camera camPreparePos [9231.65,21734.05,0.80];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+
+;comment "hostage 2 closeup";
+_camera camPrepareTarget [87236.54,82875.88,-13285.07];
+_camera camPreparePos [9230.52,21735.60,0.80];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+;comment "hostage 3 closup";
+_camera camPrepareTarget [87236.54,82875.88,-13284.98];
+_camera camPreparePos [9229.32,21737.25,0.80];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Any contact before you're in position and they're gone, so we must be quick.","PLAIN DOWN"];
+
+~3
+
+
+;comment "terrorist leader closeup";
+_camera camPrepareTarget [74756.67,96085.41,-13285.04];
+_camera camPreparePos [9223.79,21731.33,1.59];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~5
+
+;comment "begin";
+_camera camPrepareTarget [-81482.78,-6.96,-32009.78];
+_camera camPreparePos [10961.53,20322.48,36.28];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Armor will hold at Point Alpha until Abdera is cleared. Good Hunting.","PLAIN DOWN"];
+
+~5
+
+
+
+
+//Ending fade transition
+
+titlecut ["","BLACK OUT",2]
+~2
+
+
+//Terminate cam and return to game
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",2]
+exit
+
+
+
+
+

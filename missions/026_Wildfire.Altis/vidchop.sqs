@@ -1,0 +1,67 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+;comment "heli area";
+_camera camPrepareTarget [88787.02,68874.46,-12336.31];
+_camera camPreparePos [5462.17,14986.02,5.91];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["We copy, bomb is armed... we're loading up.","PLAIN DOWN"];
+~4
+
+
+;comment "side";
+_camera camPrepareTarget [-60674.42,89387.30,-9384.85];
+_camera camPreparePos [5483.94,14993.46,1.98];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Make sure you get to the extraction area as soon as possible","PLAIN DOWN"];
+~4
+
+
+;comment "nose";
+_camera camPrepareTarget [-23773.77,-79173.70,-16562.68];
+_camera camPreparePos [5480.09,15001.26,1.98];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~4
+
+;comment "inside";
+_camera camPrepareTarget [3645.91,114537.94,-9365.90];
+_camera camPreparePos [5479.01,14997.14,1.93];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Heli is starting up, we'll be there in a few minutes","PLAIN DOWN"];
+~5
+
+
+;comment "far";
+_camera camPrepareTarget [22483.92,109464.20,-27707.72];
+_camera camPreparePos [5468.42,14915.12,34.50];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~8
+
+
+;comment "extraction";
+_camera camPrepareTarget [53985.17,102979.84,-16947.45];
+_camera camPreparePos [5380.46,17268.81,14.33];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Extraction is marked on your map, clear the area and wait for Evac.","PLAIN DOWN"];
+~4
+
+titlecut ["","BLACK IN",1]
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+
