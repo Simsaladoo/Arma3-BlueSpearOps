@@ -539,8 +539,6 @@ wBrowserSP=0;
 class wBrowserMP
 {
 };
-headBob=1;
-floatingZoneArea=0;
 mouseSensitivityX=1;
 mouseSensitivityY=1;
 class MainMap
@@ -552,11 +550,15 @@ class MainMap
 		positionBack[]={0.005499999,2.2351743e-09,0.1};
 	};
 };
+headBob=1;
+floatingZoneArea=0;
+teamSwitchOffsetX=0;
+teamSwitchOffsetY=0;
 sceneComplexity=1800000;
 shadowZDistance=3000;
 viewDistance=19999.992;
 preferredObjectViewDistance=9395.6006;
-pipViewDistance=9395.6006;
+pipViewDistance=9396;
 terrainGrid=3.125;
 volumeCD=5;
 volumeFX=5;
@@ -566,9 +568,9 @@ vonRecThreshold=0.029999999;
 volumeMapDucking=1;
 volumeUI=1;
 gamma=1;
-ppBrightness=1.01;
-ppContrast=1.0599999;
-ppSaturation=1.08;
+ppBrightness=1;
+ppContrast=1;
+ppSaturation=1;
 brightness=1;
 fovTop=0.75;
 fovLeft=1.3333334;
