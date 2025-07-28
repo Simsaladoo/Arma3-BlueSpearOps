@@ -82,6 +82,7 @@ This also lends itself to being more curated towards separate storylines if we e
 033 Blind Justice (UNPUBLISHED)
 
 ## General Notes
-A common gripe seen amongst users so far has been the saving ability.  For some missions it appears disabled and only ABORT is available, so this needs to be investigated and fixed.  
+A common gripe seen amongst users so far has been saving.  For some missions it appears disabled and only ABORT is available, so this needs to be investigated and fixed.  
 Another complaint is the lack of clarity on whether these missions are for SP or CoOp.  After so long, we have no idea as to what/where/how any of these features are setup so they also need investigation. 
 Beyond that, the base game has had numerous changes and ALL missions will need to be revisited and retested.  We will simply start at the top and correct them as we go.
+Some of the equipment scripts for armory are most likely broken as they are out of date by a few years.
