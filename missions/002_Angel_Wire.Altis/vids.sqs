@@ -1,16 +1,15 @@
-//Intro fade/Camera Creation
 
 titlecut [" ","BLACK IN", 3]
 _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
-//first scene
+
 ;comment "officer";
 _camera camPrepareTarget [108381.53,-12113.51,7182.94];
 _camera camPreparePos [11587.22,11960.91,1.08];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-
+titleText ["9 September 6:15 AM","PLAIN DOWN"];
 ~5
 
 ;comment "chop leave";
@@ -18,7 +17,7 @@ _camera camPrepareTarget [108250.62,26016.97,-20490.01];
 _camera camPreparePos [11428.74,11839.71,39.69];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-
+titleText ["NATO sends an operative group, codenamed 'Blue Spear', to rescue science personnel from an Opfor Installation.","PLAIN DOWN"];
 ~5
 
 ;comment "high above";
@@ -26,6 +25,7 @@ _camera camPrepareTarget [29125.24,5671.92,-98752.03];
 _camera camPreparePos [16562.60,12781.70,317.94];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+
 ~5
 
 ;comment "car";
@@ -33,6 +33,7 @@ _camera camPrepareTarget [-68107.28,-39346.35,-8578.99];
 _camera camPreparePos [16732.42,12891.99,3.91];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["The sceientists are being held up somewhere within the Pyrgos commercial building site.","PLAIN DOWN"];
 ~4
 
 
@@ -41,6 +42,7 @@ _camera camPrepareTarget [-66180.19,67832.70,-10430.74];
 _camera camPreparePos [16624.27,12747.41,1.59];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["They are planning to move them out of the area later today, but we've held up travel to the area.","PLAIN DOWN"];
 ~5
 
 ;comment "roof over hostages";
@@ -48,6 +50,7 @@ _camera camPrepareTarget [52835.43,-76547.34,-26465.32];
 _camera camPreparePos [16555.76,12792.93,20.88];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["They are being very careful with them, and have surrounded the area to prevent local government intervention. ","PLAIN DOWN"];
 ~5
 
 ;comment "insdoors";
@@ -55,24 +58,24 @@ _camera camPrepareTarget [-82085.23,27339.07,-6476.92];
 _camera camPreparePos [16638.10,12795.75,5.79];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["We will drop you across the bay and you can ingress using some donated boats from the SSN-701 Ding Chavez nearby.","PLAIN DOWN"];
 ~5
-
 
 
 ;comment "water";
-_camera camPrepareTarget [35573.05,-85123.45,-6923.34];
-_camera camPreparePos [16381.11,12772.15,1.44];
+_camera camPrepareTarget [14999.05,12216.45,65.34];
+_camera camPreparePos [16448.11,12468.15,3.14];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-
+titleText ["Get in there and neutral any theats, you are weapons hot.","PLAIN DOWN"];
 ~5
 
 ;comment "tower";
-_camera camPrepareTarget [16599.04,111513.66,-10181.98];
-_camera camPreparePos [16835.54,12035.46,19.43];
+_camera camPrepareTarget [16687.04,12787.66,3.98];
+_camera camPreparePos [16344.54,12455.46,22.43];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-
+titleText ["Get those scientists out of that park and call support for evac when you can.","PLAIN DOWN"];
 
 ~5
 
@@ -81,13 +84,13 @@ _camera camCommitPrepared 0
 
 
 
-//Ending fade transition
+
 
 titlecut ["","BLACK OUT",2]
 ~2
 
 
-//Terminate cam and return to game
+
 
 _camera cameraeffect ["terminate", "back"]
 camdestroy _camera

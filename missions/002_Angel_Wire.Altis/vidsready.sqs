@@ -1,0 +1,53 @@
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "crew getin";
+_camera camPrepareTarget [11599.89,11946.942,1];
+_camera camPreparePos [11620.1,11943.8,1.54476];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Co-Pilot James: Allright divers, get situated and we'll take you out to sea...","PLAIN DOWN"];
+~6
+
+;comment "";
+_camera camPrepareTarget [11700.19,11818.58,0.15];
+_camera camPreparePos [11602.863,11942.808,2.5];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["...hope you brought your floaties!","PLAIN DOWN"];
+~5
+
+;comment "";
+_camera camPrepareTarget [12191.134,12140.447,2.64];
+_camera camPreparePos [11549.68,11937.16,2.1];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Pilot Faulkner: James...","PLAIN DOWN"];
+~5
+
+;comment "";
+_camera camPrepareTarget [11731.89,11939.38,0.53];
+_camera camPreparePos [11487.07,11771.48,33.81];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Co-Pilot James: Shutting up now, sir.","PLAIN DOWN"];
+~5
+
+
+
+
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

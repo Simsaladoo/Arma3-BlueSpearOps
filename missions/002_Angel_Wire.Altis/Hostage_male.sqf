@@ -1,6 +1,3 @@
-// execute with in units initline.
-// _null = [this] execVM "Hostage_male.sqf"
-// hostage
 _CivnotRescued = true;
 _man = _this select 0;
 _man setcaptive true;
@@ -29,6 +26,6 @@ _man switchmove "SitStandUp";
 detach player;
 sleep 2;
 _man enableAI "MOVE";
-// just put // before this if you dont want the unit to join your group
+
 [_man] joinsilent player;
 };
