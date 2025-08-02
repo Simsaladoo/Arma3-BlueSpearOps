@@ -1,0 +1,18 @@
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+_camera camPrepareTarget [14979.39,12216.138,22.89]
+_camera camPreparePos [15115.31,12292.87,3.51]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 0
+titleText ["Pilot Faulkner: Moving into drop position, ready up!","PLAIN DOWN"]
+~6
+
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+titlecut ["","BLACK IN",1]
+exit
+
+
+

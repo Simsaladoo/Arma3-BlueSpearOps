@@ -13,7 +13,7 @@ titleText ["Co-Pilot James: Allright divers, get situated and we'll take you out
 
 ;comment "";
 _camera camPrepareTarget [11700.19,11818.58,0.15];
-_camera camPreparePos [11602.863,11942.808,2.5];
+_camera camPreparePos [11595.418,11948.432,1.5];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
 titleText ["...hope you brought your floaties!","PLAIN DOWN"];

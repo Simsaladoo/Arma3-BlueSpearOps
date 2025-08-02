@@ -1,9 +1,9 @@
-onLoadIntro = "NATO sends an operative group to rescue science personnel from an Opfor Installation."
+onLoadIntro = "NATO sends an operative group to rescue nuclear science personnel from an Opfor Installation."
 onLoadMissionTime = 1;
 onLoadIntroTime = 1;
 author="Simsaladoo";
 OnLoadName = "Angel Wire";
-OnLoadMission = "NATO sends an operative group to rescue science personnel from an Opfor Installation.";
+OnLoadMission = "NATO sends an operative group to rescue nuclear science personnel from an Opfor Installation.";
 loadScreen = "images\MyLogo.jpg";
 aiKills = 1;
 briefing = 1;

@@ -550,10 +550,11 @@ class MainMap
 		positionBack[]={0.005499999,2.2351743e-09,0.1};
 	};
 };
-headBob=1;
-floatingZoneArea=0;
 teamSwitchOffsetX=0;
 teamSwitchOffsetY=0;
+difficulty="Regular";
+headBob=1;
+floatingZoneArea=0;
 sceneComplexity=1800000;
 shadowZDistance=3000;
 viewDistance=19999.992;

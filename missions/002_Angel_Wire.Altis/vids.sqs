@@ -9,7 +9,7 @@ _camera camPrepareTarget [108381.53,-12113.51,7182.94];
 _camera camPreparePos [11587.22,11960.91,1.08];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-titleText ["9 September 6:15 AM","PLAIN DOWN"];
+titleText ["9 September 6:35 PM","PLAIN DOWN"];
 ~5
 
 ;comment "chop leave";
