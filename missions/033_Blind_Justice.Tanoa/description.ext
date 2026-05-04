@@ -1,9 +1,9 @@
-onLoadIntro = "Blue Spear Operatives infiltrate a secret Opfor compound deep in the ruins of Tanoa to rescue a scientist."
+onLoadIntro = "Blue Spear Operatives recover stolen weapons and data from a sunken plane crash in Tanoa."
 onLoadMissionTime = 1;
 onLoadIntroTime = 1;
 author="Simsaladoo";
-OnLoadName = "Hawkeye";
-OnLoadMission = "Blue Spear Operatives infiltrate a secret Opfor compound deep in the ruins of Tanoa to rescue a scientist.";
+OnLoadName = "Blind Justice";
+OnLoadMission = "Blue Spear Operatives recover stolen weapons and data from a sunken plane crash in Tanoa.";
 loadScreen = "images\MyLogo.jpg";
 aiKills = 0;
 briefing = 1;

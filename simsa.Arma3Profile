@@ -1,7 +1,7 @@
 version=2;
 blood=1;
 singleVoice=0;
-customScheme=1;
+customScheme=0;
 controller="Default";
 sensitivity="Medium";
 vibrations=1;
@@ -455,29 +455,6 @@ keyUser20[]={};
 revMouse=0;
 mouseSmoothing=0;
 mouseAcceleration=0;
-class JoysticksList
-{
-	class Joystick1
-	{
-		guid="CF589850-3D60-11F0-8004-444553540000";
-		name="3Dconnexion KMJ Emulator";
-		offset=256;
-		isXInput=0;
-		mode="Custom";
-		analogClickHigh=0.40000001;
-		analogClickLow=0.2;
-	};
-	class Joystick2
-	{
-		guid="2E06D9E0-31E8-11F0-8005-444553540000";
-		name="3Dconnexion Universal Receiver";
-		offset=512;
-		isXInput=0;
-		mode="Custom";
-		analogClickHigh=0.40000001;
-		analogClickLow=0.2;
-	};
-};
 anisoFilter=16;
 textureQuality=4;
 shadowQuality=5;
@@ -539,8 +516,6 @@ wBrowserSP=0;
 class wBrowserMP
 {
 };
-mouseSensitivityX=1;
-mouseSensitivityY=1;
 class MainMap
 {
 	class Compass
@@ -553,30 +528,115 @@ class MainMap
 teamSwitchOffsetX=0;
 teamSwitchOffsetY=0;
 difficulty="Regular";
+bootCampWarning=1;
+FavoriteServers[]={};
+browsingSource="History";
+class Filter
+{
+	serverName="";
+	missionType="";
+	missionName="";
+	maxPing=0;
+	minPlayers=0;
+	maxPlayers=0;
+	fullServers=1;
+	passwordedServers=1;
+	monetizedServers=1;
+	battleyeRequired=0;
+	expansions=1;
+};
+battleyeLicense=1;
+lastMPMission="King of the Hill RHS by Sa-Matra (v17)";
+preferredOutputDevice="{0.0.0.00000000}.{0dd5aefb-5926-4d23-9591-2e6cce88a291}";
+mouseSensitivityX=1;
+mouseSensitivityY=1;
+class JoysticksList
+{
+	class Joystick1
+	{
+		guid="CF589850-3D60-11F0-8004-444553540000";
+		name="3Dconnexion KMJ Emulator";
+		offset=256;
+		isXInput=0;
+		mode="Custom";
+		analogClickHigh=0.40000001;
+		analogClickLow=0.2;
+	};
+	class Joystick2
+	{
+		guid="2E06D9E0-31E8-11F0-8005-444553540000";
+		name="3Dconnexion Universal Receiver";
+		offset=512;
+		isXInput=0;
+		mode="Custom";
+		analogClickHigh=0.40000001;
+		analogClickLow=0.2;
+	};
+	class Joystick3
+	{
+		guid="F4CCE470-40A7-11F0-8002-444553540000";
+		name="Bluetooth LE XINPUT compatible input device";
+		offset=768;
+		isXInput=1;
+		mode="Disabled";
+		analogClickHigh=0.40000001;
+		analogClickLow=0.2;
+	};
+	class Joystick4
+	{
+		guid="2E06D9E0-31E8-11F0-8003-444553540000";
+		name="3Dconnexion Universal Receiver";
+		offset=1024;
+		isXInput=0;
+		mode="Custom";
+		analogClickHigh=0.40000001;
+		analogClickLow=0.2;
+	};
+	class Joystick5
+	{
+		guid="2E06D9E0-31E8-11F0-8006-444553540000";
+		name="3Dconnexion Universal Receiver";
+		offset=1280;
+		isXInput=0;
+		mode="Custom";
+		analogClickHigh=0.40000001;
+		analogClickLow=0.2;
+	};
+	class Joystick6
+	{
+		guid="DFC4D960-3D60-11F0-8005-444553540000";
+		name="SpaceMouse Wireless";
+		offset=1536;
+		isXInput=0;
+		mode="Custom";
+		analogClickHigh=0.40000001;
+		analogClickLow=0.2;
+	};
+};
 headBob=1;
 floatingZoneArea=0;
 sceneComplexity=1800000;
 shadowZDistance=3000;
 viewDistance=19999.992;
-preferredObjectViewDistance=9395.6006;
-pipViewDistance=9396;
+preferredObjectViewDistance=9395.6016;
+pipViewDistance=9396.0049;
 terrainGrid=3.125;
-volumeCD=5;
-volumeFX=5;
-volumeSpeech=5;
-volumeVoN=10;
+volumeCD=3.0449214;
+volumeFX=3.0283082;
+volumeSpeech=2.9950819;
+volumeVoN=0;
 vonRecThreshold=0.029999999;
-volumeMapDucking=1;
-volumeUI=1;
+volumeMapDucking=0.87267387;
+volumeUI=0.4922246;
 gamma=1;
 ppBrightness=1;
 ppContrast=1;
 ppSaturation=1;
 brightness=1;
 fovTop=0.75;
-fovLeft=1.3333334;
-uiTopLeftX=0.29374999;
+fovLeft=1.4222221;
+uiTopLeftX=0.3066406;
 uiTopLeftY=0.22499999;
-uiBottomRightX=0.70625001;
+uiBottomRightX=0.69335938;
 uiBottomRightY=0.77499998;
 IGUIScale=0.55000001;

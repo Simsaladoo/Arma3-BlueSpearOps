@@ -1,5 +1,3 @@
-//Dealers head out
-
 
 titlecut [" ","BLACK IN", 2]
 _camera = "camera" camcreate [0,0,0]
@@ -27,6 +25,7 @@ _camera camPrepareTarget [-71630.82,290.59,-62511.69];
 _camera camPreparePos [4663.17,15454.85,118.72];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["The main objective are the towers marked atop Magos.","PLAIN DOWN"];
 ~5
 
 ;comment "inner magos";
@@ -41,6 +40,7 @@ _camera camPrepareTarget [99626.34,-13367.41,-26949.32];
 _camera camPreparePos [9138.01,19309.57,31.17];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["It is guarded by a large Opfor force consisting of both soft and hard targets...","PLAIN DOWN"];
 ~4
 
 ;comment "innertarget2";
@@ -48,19 +48,8 @@ _camera camPrepareTarget [92134.73,-35652.20,-9825.00];
 _camera camPreparePos [9204.42,19307.56,1.44];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["A reinforcement convoy is travelling there now, and we're going to stomp them along the way!","PLAIN DOWN"];
 ~4
-
-;comment "insidetarget2house";
-_camera camPrepareTarget [-36818.02,-69503.09,-830.54];
-_camera camPreparePos [9203.61,19271.07,1.69];
-_camera camPrepareFOV 0.700;
-_camera camCommitPrepared 0
-
-
-~4
-
-
-
 
 
 ;comment "convoy leaving";
@@ -68,14 +57,17 @@ _camera camPrepareTarget [-87711.28,16906.80,-26551.42];
 _camera camPreparePos [8667.76,15824.75,14.38];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["You have supports ready on standby, use them and all equipment where necessary","PLAIN DOWN"];
 ~5
 
-;comment "23:31:07";
+
+
+;comment "flyover";
 _camera camPrepareTarget [-44407.08,96627.98,-3532.50];
 _camera camPreparePos [10557.65,13166.84,51.65];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-
+titleText ["Stay frosty!","PLAIN DOWN"];
 
 ~5
 

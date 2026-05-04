@@ -1,0 +1,48 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "2:03:18";
+_camera camPrepareTarget [-86764.30,-29569.46,-21910.73];
+_camera camPreparePos [5525.27,2059.99,3.11];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Hold at the wave breakers until Bravo Team clears the beach, then we can move in towards the wreck.","PLAIN DOWN"];
+~3
+
+
+;comment "2:02:55";
+_camera camPrepareTarget [3830.90,-95304.96,-21870.94];
+_camera camPreparePos [5497.68,2253.19,28.97];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+;comment "2:02:35";
+_camera camPrepareTarget [-66192.27,-67206.15,6407.33];
+_camera camPreparePos [5540.63,2170.96,0.75];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+~5
+
+
+
+
+
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

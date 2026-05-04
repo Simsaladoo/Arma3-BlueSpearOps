@@ -1,0 +1,33 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+;comment "2:09:46";
+_camera camPrepareTarget [-152.24,89652.13,-47837.14];
+_camera camPreparePos [5525.93,2050.29,2.13];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+titleText ["Bravo Team: Engaging!","PLAIN DOWN"];
+~5
+
+
+
+
+
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+
