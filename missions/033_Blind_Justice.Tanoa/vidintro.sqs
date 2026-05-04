@@ -6,37 +6,31 @@ _camera cameraeffect ["internal","back"]
 
 
 ;comment "officer";
-_camera camPrepareTarget [-8.49102,0];
-_camera camPreparePos [6898.22,7425.3,14.88];
+;comment "12:34:04";
+_camera camPrepareTarget [52235.71,-81011.53,-11092.27];
+_camera camPreparePos [6900.00,7426.25,14.61];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-titleText ["6 June 17:51","PLAIN DOWN"];
-
+titleText ["Blue Spear recovers a Black Box from plane wreckage and locates stolen weapons.","PLAIN DOWN"];
 ~4
 
-
-;comment "";
-_camera camPrepareTarget [-63445.63,-67325.62,21696.91];
-_camera camPreparePos [5653.66,1623.64,-18.47];
-_camera camPrepareFOV 0.700;
-_camera camCommitPrepared 0
-
-~4
 
 ;comment "Delgado";
-_camera camPrepareTarget [-4.40011,0];
-_camera camPreparePos [5548.71,3097.53,5.00356];
+_camera camPrepareTarget [-26121.78,-91561.09,-6464.34];
+_camera camPreparePos [5565.72,3064.59,4.21];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
 titleText ["Blue Spear recovers a Black Box from plane wreckage and locates stolen weapons.","PLAIN DOWN"];
 
-~3
+~4
 
-;comment "Island Storming";
-_camera camPrepareTarget [-46607.38,87108.40,13.72];
-_camera camPreparePos [5521.56,1783.23,8.10];
+
+;comment "12:31:18";
+_camera camPrepareTarget [-74078.02,61685.41,8675.53];
+_camera camPreparePos [5550.93,1818.99,1.06];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+
 titleText ["Bravo Team is landing on the shores now, they will give you the all clear to move in","PLAIN DOWN"];
 ~5
 

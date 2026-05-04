@@ -16,7 +16,7 @@ null = [this] execVM "depth.sqf"
 */
 
 if !(isServer) exitWith {};
-waitUntil {!isNull player && isPlayer player};
+waitUntil {!isNull a1 && isPlayer a1};
 
 _diver = _this select 0;
 _maxdepth = if (count _this > 1) then {_this select 1} else {-40};
@@ -29,13 +29,13 @@ waitUntil {sleep 1; surfaceIsWater position _diver};
 while {surfaceIsWater position _diver} do
 {
 sleep 1;
-if (player == _diver) then {hintsilent format ["Current Depth: %1 \n Oxygen Remaining: %2", (getPosASLW _diver) select 2, getOxygenRemaining _diver]};
+if (a1 == _diver) then {hintsilent format ["Current Depth: %1 \n Oxygen Remaining: %2", (getPosASLW _diver) select 2, getOxygenRemaining _diver]};
 
 if ((getPosASLW _diver) select 2 < _maxdepth) then
 {
 while {(getPosASLW _diver) select 2 < _maxdepth} do
 {
-if (player == _diver) then
+if (a1 == _diver) then
 {
 hintsilent parseText format ["<t color='#ff0000'>Too Deep, Surface to 40 Meters.</t>"];
 _diver setDamage (damage _diver) + 0.05;
