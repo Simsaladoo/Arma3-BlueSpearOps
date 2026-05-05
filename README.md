@@ -2,6 +2,8 @@
 
 https://steamcommunity.com/workshop/filedetails/?id=264779809
 
+![Banner](https://david-miller.life/images/arma.jpg)
+
 In early 2013, NATO forces stormed onto the islands of Altis and Stratis to help FIA combat ongoing Opfor chemical and nuclear weapon 
 development. NATO successfully stopped nuclear research articles in late 2013 and also gained its own foothold in the Aegean to begin 
 a full-scale offensive to eliminate the Opfor radicals still operating in the area.  NATO destroyed the majority of the Opfor offensive 
