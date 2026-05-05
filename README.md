@@ -2,6 +2,17 @@
 
 https://steamcommunity.com/workshop/filedetails/?id=264779809
 
+In early 2013, NATO forces stormed onto the islands of Altis and Stratis to help FIA combat ongoing Opfor chemical and nuclear weapon 
+development. NATO successfully stopped nuclear research articles in late 2013 and also gained its own foothold in the Aegean to begin 
+a full-scale offensive to eliminate the Opfor radicals still operating in the area.  NATO destroyed the majority of the Opfor offensive 
+capabilities on Altis in the first quarter of 2014, using armored tank columns protected by air support which later helped force the Opfor 
+local government into peace talks. By the summer of 2014, the were no more major assaults from either side.  Unfortunately there are 
+still many free radicals involved with terrorizing the FIA locals, and the have kept moving with their chemical research, despite their 
+governments’ decisions across the sea. NATO was tipped off by an anonymous local about scientists being taken hostage in Pyrgos, 
+and so it was decided to form a specialized response team to help stamp out the Opfor radicals scattered across the Islands.  This group 
+would be made of the most talented marksmen, divers, explosive experts, engineers, and warriors the world has to offer. 
+Their codename: Blue Spear
+
 [SP] While the war between NATO and Opfor are in a standstill on Altis, insurgent forces wreak havoc across local sites. In the front lines against 
 these rebels is a counter-terrorism task force, codenamed "Blue Spear." Operating out of airfields on both Stratis and Altis, they are able to strike 
 anywhere, at anytime. Although their existence is secret, they have helped save the lives of countless people around the globe.
@@ -16,29 +27,12 @@ The Blue Spear Operations are split up into volumes in the Workshop Collections.
 -Blue Spear Ops I: Brass Hearts
 Volume I
 
-In early 2013, NATO forces stormed onto the islands of Altis and Stratis to help FIA combat ongoing Opfor chemical and nuclear weapon 
-development. NATO successfully stopped nuclear research articles in late 2013 and also gained its own foothold in the Aegean to begin 
-a full-scale offensive to eliminate the Opfor radicals still operating in the area.  NATO destroyed the majority of the Opfor offensive 
-capabilities on Altis in the first quarter of 2014, using armored tank columns protected by air support which later helped force the Opfor 
-local government into peace talks. By the summer of 2014, the were no more major assaults from either side.  Unfortunately there are 
-still many free radicals involved with terrorizing the FIA locals, and the have kept moving with their chemical research, despite their 
-governments’ decisions across the sea. NATO was tipped off by an anonymous local about scientists being taken hostage in Pyrgos, 
-and so it was decided to form a specialized response team to help stamp out the Opfor radicals scattered across the Islands.  This group 
-would be made of the most talented marksmen, divers, explosive experts, engineers, and warriors the world has to offer. 
-Their codename: Blue Spear
-
 -Blue Spear Ops II: Black Carrion
--- Same description --
+Volume II
 
 -Blue Spear Ops III: Critical Mass
--- Same description --
+Volume III
 
-
-ALL of the missions are also added to the now 25-mission mega Collection:
--Blue Spear Operations: Counter-terrorism Task Force
-
-Its much easier to just use the mega collection, but the Volumes look better and help with visibility in the store.
-This also lends itself to being more curated towards separate storylines if we ever have a proper story arc implemented.
 
 ## Missions
 
@@ -112,7 +106,7 @@ This also lends itself to being more curated towards separate storylines if we e
 
 032 Hawkeye - [SP/CoOp] Blue Spear Operatives infiltrate a secret Opfor compound deep in the ruins of Tanoa to rescue a scientist.
 
-033 Blind Justice (UNPUBLISHED)
+033 Blind Justice - Blue Spear Operatives recover stolen weapons and data from a sunken plane crash in Tanoa.
 
 ### General Notes
 A common gripe seen amongst users so far has been saving.  For some missions it appears disabled and only ABORT is available, so this needs to be investigated and fixed.  
