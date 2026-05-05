@@ -26,14 +26,11 @@ This repository houses the mission files for all campaign missions, numbered one
 
 The Blue Spear Operations are split up into volumes in the Workshop Collections.  They are as follows:
 
--Blue Spear Ops I: Brass Hearts
-Volume I
+-[Blue Spear Ops I: Brass Hearts](https://steamcommunity.com/sharedfiles/filedetails/?id=575162157)
 
--Blue Spear Ops II: Black Carrion
-Volume II
+-[Blue Spear Ops II: Black Carrion](https://steamcommunity.com/sharedfiles/filedetails/?id=579499415)
 
--Blue Spear Ops III: Critical Mass
-Volume III
+-[Blue Spear Ops III: Critical Mass](https://steamcommunity.com/sharedfiles/filedetails/?id=579501119)
 
 
 ## Missions
