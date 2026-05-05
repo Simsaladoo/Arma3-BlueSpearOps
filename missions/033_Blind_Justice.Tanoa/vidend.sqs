@@ -5,17 +5,18 @@ _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 
-;comment "22:24:08";
-_camera camPrepareTarget [10940.19,103341.08,-31340.10];
-_camera camPreparePos [10380.31,8459.70,25.76];
+;comment "officer";
+;comment "12:34:04";
+_camera camPrepareTarget [52235.71,-81011.53,-11092.27];
+_camera camPreparePos [6900.00,7426.25,14.61];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
 
 titleText ["Your team successfully completed all mission objectives, Good Work!","PLAIN DOWN"];
 ~4
-;comment "22:24:28";
-_camera camPrepareTarget [-43606.81,-74858.65,-11214.24];
-_camera camPreparePos [10386.00,8529.28,1.96];
+;comment "SDV";
+_camera camPrepareTarget [65504.45,-78730.36,1681.24];
+_camera camPreparePos [5704.47,1403.10,-11.80];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
 ~6

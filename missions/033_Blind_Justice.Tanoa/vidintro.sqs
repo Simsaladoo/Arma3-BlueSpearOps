@@ -25,7 +25,7 @@ titleText ["Blue Spear recovers a Black Box from plane wreckage and locates stol
 ~4
 
 
-;comment "12:31:18";
+;comment "Beach";
 _camera camPrepareTarget [-74078.02,61685.41,8675.53];
 _camera camPreparePos [5550.93,1818.99,1.06];
 _camera camPrepareFOV 0.700;
@@ -36,7 +36,7 @@ titleText ["Bravo Team is landing on the shores now, they will give you the all 
 
 
 
-;comment "1:48:00";
+;comment "Wreck";
 _camera camPrepareTarget [-69868.78,-62500.36,11296.39];
 _camera camPreparePos [5398.20,2361.33,-10.29];
 _camera camPrepareFOV 0.700;
@@ -45,7 +45,7 @@ titleText ["Find the wreckage and get out of there.","PLAIN DOWN"];
 ~4
 
 
-;comment "1:48:45";
+;comment "Delgado 2";
 _camera camPrepareTarget [-32873.22,-88511.54,-10646.40];
 _camera camPreparePos [5591.05,3176.14,19.56];
 _camera camPrepareFOV 0.700;
@@ -53,6 +53,22 @@ _camera camCommitPrepared 0
 titleText ["Enemies are swarming so watch yourself.","PLAIN DOWN"];
 ~4
 
+
+;comment "15:36:24";
+_camera camPrepareTarget [104983.21,8037.95,3097.41];
+_camera camPreparePos [5221.94,1865.33,0.64];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
+
+;comment "SDV";
+_camera camPrepareTarget [65504.45,-78730.36,1681.24];
+_camera camPreparePos [5704.47,1403.10,-11.80];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+
+~3
 
 
 titlecut ["","BLACK IN",1]
