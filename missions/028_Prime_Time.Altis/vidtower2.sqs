@@ -5,12 +5,13 @@ _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 
-;comment "tower 2";
-_camera camPrepareTarget [115769.67,1266.62,-24362.69];
-_camera camPreparePos [19210.12,9688.10,41.48];
+;comment "17:43:03";
+_camera camPrepareTarget [93024.88,-49323.22,-32384.04];
+_camera camPreparePos [19253.75,9779.09,56.12];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-titleText ["San Andre Power Station is cleared and the protestors are all free.  Great Work.","PLAIN DOWN"];
+
+titleText ["Eastern Towers are cleared, Excellent Work.  Now Find a comfortable place to shoot those miserable bastards.","PLAIN DOWN"];
 ~10
 
 

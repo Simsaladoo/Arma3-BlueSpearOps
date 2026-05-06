@@ -1,0 +1,39 @@
+
+
+titlecut [" ","BLACK IN", 1]
+_camera = "camera" camcreate [0,0,0]
+_camera cameraeffect ["internal","back"]
+
+
+
+
+;comment "chopper cockpit";
+_camera camPrepareTarget [-64405.15,-52926.53,-3688.95];
+_camera camPreparePos [11602.66,11950.39,2.10];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Captors have been neutralized. CAS is spooling up, remain in observation.","PLAIN DOWN"];
+~4
+
+
+;comment "16:22:02";
+_camera camPrepareTarget [32780.93,-84094.92,18054.53];
+_camera camPreparePos [11598.81,11958.30,0.55];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Copy, spoolin and movin","PLAIN DOWN"];
+
+~4
+
+
+
+titlecut ["","BLACK IN",1]
+_camera cameraeffect ["terminate", "back"]
+camdestroy _camera
+
+exit
+
+
+
+
+

@@ -1,9 +1,9 @@
-onLoadIntro = "Blue Spear Operatives hunt down an Opfor radical leader holding a hostage off the grid."
+onLoadIntro = "Blue Spear Operatives rescue civilian hostages from radical Opfor forces."
 onLoadMissionTime = 1;
 onLoadIntroTime = 1;
 author="Simsaladoo";
 OnLoadName = "Prime Time";
-OnLoadMission = "Blue Spear Operatives hunt down an Opfor radical leader holding a hostage off the grid.";
+OnLoadMission = "Blue Spear Operatives rescue civilian hostages from radical Opfor forces.";
 loadScreen = "images\MyLogo.jpg";
 aiKills = 0;
 briefing = 1;
