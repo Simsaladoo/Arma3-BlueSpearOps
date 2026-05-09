@@ -14,14 +14,15 @@ titleText ["6 June 17:51","PLAIN DOWN"];
 
 ~4
 
-;comment "starting area";
-_camera camPrepareTarget [99227.88,-16407.61,-38168.29];
-_camera camPreparePos [10334.07,8527.78,12.35];
+;comment "front camp";
+_camera camPrepareTarget [106499.58,-6581.60,-22696.54];
+_camera camPreparePos [10348.79,8523.21,4.45];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+
 ~4
 
-;comment "friendly scouts";
+;comment "friendly camp & player";
 _camera camPrepareTarget [-77301.88,-37424.26,-13867.90];
 _camera camPreparePos [10386.59,8528.64,2.13];
 _camera camPrepareFOV 0.700;
@@ -36,7 +37,7 @@ _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
 ~5
 
-;comment "drone landing";
+;comment "drone landing spot above target";
 _camera camPrepareTarget [-21449.97,-23410.65,-88771.49];
 _camera camPreparePos [11070.27,8477.44,37.34];
 _camera camPrepareFOV 0.700;
@@ -45,45 +46,50 @@ titleText ["We managed to find him using our drone, it is giving us intel on his
 ~5
 
 
-;comment "inner area";
-_camera camPrepareTarget [-63202.30,55449.10,-47469.02];
-_camera camPreparePos [11076.39,8460.00,7.63];
+
+;comment "device";
+_camera camPrepareTarget [-68736.29,65309.38,-19737.13];
+_camera camPreparePos [11076.27,8461.30,2.41];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
 ~4
 
-;comment "bad uy backlside";
-_camera camPrepareTarget [101219.00,47239.63,-18937.82];
-_camera camPreparePos [11055.53,8463.37,1.60];
+;comment "badguy 1";
+_camera camPrepareTarget [-77083.45,51767.29,-18630.27];
+_camera camPreparePos [11062.71,8465.40,1.40];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+
 titleText ["The Scientist is under constant supervision, we will need to clear the area and move fast.","PLAIN DOWN"];
 ~3
 
-;comment "bad guy front";
-_camera camPrepareTarget [-87657.94,3879.73,-15085.21];
-_camera camPreparePos [11057.79,8464.98,1.49];
-_camera camPrepareFOV 0.700;
-_camera camCommitPrepared 0
-~3
+
 
 ;comment "hostage";
-_camera camPrepareTarget [-71869.62,-46943.02,-6977.29];
-_camera camPreparePos [11064.13,8466.62,0.60];
+_camera camPrepareTarget [71486.83,-71053.03,-4828.55];
+_camera camPreparePos [11062.31,8466.31,0.61];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-titleText ["There is no room for failure","PLAIN DOWN"];
+titleText ["Clear out and and all hostiles so we can get him home safe.","PLAIN DOWN"];
+~5
 
-~4
 
-;comment "22:18:34";
-_camera camPrepareTarget [-30364.48,99255.67,-5298.36];
-_camera camPreparePos [11067.21,8409.87,6.45];
+;comment "entrance 1";
+_camera camPrepareTarget [-85747.48,30022.18,12640.80];
+_camera camPreparePos [11109.60,8472.59,1.18];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-titleText ["Get him out of there and back to the Independent village near the AO.  Good Hunting.","PLAIN DOWN"];
+titleText ["The whole temple is a maze and will be swarming with enemies.","PLAIN DOWN"];
+~3
 
-~4
+
+;comment "entrance 2";
+_camera camPrepareTarget [20482.62,107915.13,-2874.27];
+_camera camPreparePos [11064.00,8407.77,4.39];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["Good luck team, you're going to need it.","PLAIN DOWN"];
+~3
 
 
 
