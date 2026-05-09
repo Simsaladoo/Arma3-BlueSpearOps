@@ -10,106 +10,58 @@ _camera camPrepareTarget [44327.83,108414.85,13.89];
 _camera camPreparePos [14276.31,13036.87,1.42];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["Blue Spear Operatives raid an illegal Opfor munitions trade at Sideras in Northern Altis.","PLAIN DOWN"];
+~5
 
-~4
 
 
-;comment "dying chop";
-_camera camPrepareTarget [63814.39,78195.72,-56760.02];
-_camera camPreparePos [4601.97,21608.91,323.48];
+
+
+;comment "helo";
+_camera camPrepareTarget [117402.46,33899.38,341.48];
+_camera camPreparePos [21066.01,7081.61,0.94];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-
-~4
-
-
+titleText ["Opfor leaders are expected to head to the meeting at anytime, so we need to be ready in position.","PLAIN DOWN"];
+~5
 
 
-;comment "castle back";
-_camera camPrepareTarget [-73937.36,-24705.22,-39401.59];
-_camera camPreparePos [5029.36,22009.97,123.56];
+
+;comment "pier end";
+_camera camPrepareTarget [119278.67,49916.69,10801.67];
+_camera camPreparePos [23249.13,24192.75,3.27];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
-
-~4
-
-
-
-
-;comment "17:43:37";
-_camera camPrepareTarget [-84029.75,67427.66,3568.69];
-_camera camPreparePos [4930.82,21865.75,7.29];
-_camera camPrepareFOV 0.700;
-_camera camCommitPrepared 0
-~4
-
-
-
-;comment "INC town 1 INF";
-_camera camPrepareTarget [65822.36,99234.73,-13447.61];
-_camera camPreparePos [4522.32,21427.63,7.50];
-_camera camPrepareFOV 0.700;
-_camera camCommitPrepared 0
-~4
-
-;comment "boat";
-_camera camPrepareTarget [5792.64,-75289.07,18103.13];
-_camera camPreparePos [4850.08,22850.07,1.91];
-_camera camPrepareFOV 0.700;
-_camera camCommitPrepared 0
-~3
-
-;comment "17:49:41";
-_camera camPrepareTarget [-91777.28,-4743.79,-9016.07];
-_camera camPreparePos [4309.64,21356.01,1.24];
-_camera camPrepareFOV 0.700;
-_camera camCommitPrepared 0
+titleText ["The pier has been overrun with hostiles, so don't make your presence known too early.","PLAIN DOWN"];
 ~3
 
 
-
-
-
-
-
-;comment "INC cars east";
-_camera camPrepareTarget [-75590.67,-33749.66,-14095.56];
-_camera camPreparePos [6109.67,22211.90,36.70];
+;comment "tower";
+_camera camPrepareTarget [94568.55,86989.16,-31257.14];
+_camera camPreparePos [23325.26,24171.48,18.18];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
 
+~3
+
+
+;comment "hilltop";
+_camera camPrepareTarget [-64851.67,60358.33,-28877.95];
+_camera camPreparePos [23774.48,24223.17,24.83];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+titleText ["We've only got one shot at this, so make it count.","PLAIN DOWN"];
 ~4
 
 
 
-
-
-
-;comment "INC chops";
-_camera camPrepareTarget [-12612.50,116121.05,14937.70];
-_camera camPreparePos [3015.07,18480.69,0.88];
+;comment "ready boat";
+_camera camPrepareTarget [86254.13,102192.70,-18257.37];
+_camera camPreparePos [25422.94,24950.81,1.04];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["Good Hunting.","PLAIN DOWN"];
 ~3
-
-
-;comment "INC readying chopers";
-_camera camPrepareTarget [-47062.51,-66648.63,2337.35];
-_camera camPreparePos [4103.30,19245.78,1.17];
-_camera camPrepareFOV 0.700;
-_camera camCommitPrepared 0
-~3
-
-
-;comment "Kirby";
-_camera camPrepareTarget [89876.73,66692.44,-27430.93];
-_camera camPreparePos [4885.40,21918.47,1.87];
-_camera camPrepareFOV 0.700;
-_camera camCommitPrepared 0
-
-~4
-
-
 
 
 titlecut ["","BLACK IN",1]

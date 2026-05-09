@@ -5,15 +5,14 @@ _camera = "camera" camcreate [0,0,0]
 _camera cameraeffect ["internal","back"]
 
 
-;comment "0:55:59";
-_camera camPrepareTarget [-54427.37,79311.26,-25533.31];
-_camera camPreparePos [25493.63,24910.58,24.28];
+;comment "0:52:37";
+_camera camPrepareTarget [-38815.04,-53796.89,-5806.95];
+_camera camPreparePos [23438.28,24245.78,3.33];
 _camera camPrepareFOV 0.700;
 _camera camCommitPrepared 0
+titleText ["Vicktor Tango has landed, keep eyes on!","PLAIN DOWN"];
 
-titleText ["Mission Complete, Good Work!","PLAIN DOWN"];
-
-~10
+~6
 
 
 

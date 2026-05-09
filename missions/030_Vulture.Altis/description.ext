@@ -1,9 +1,9 @@
-onLoadIntro = "Blue Spear Operatives attack and clear the South Pefkas Bay Military Lab"
+onLoadIntro = "Blue Spear Operatives raid an illegal Opfor munitions trade at Sideras in Northern Altis."
 onLoadMissionTime = 1;
 onLoadIntroTime = 1;
 author="Simsaladoo";
 OnLoadName = "Vulture";
-OnLoadMission = "Blue Spear Operatives attack and clear the South Pefkas Bay Military Lab";
+OnLoadMission = "Blue Spear Operatives raid an illegal Opfor munitions trade at Sideras in Northern Altis.";
 loadScreen = "images\MyLogo.jpg";
 aiKills = 0;
 briefing = 1;
